@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube Summarizer</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>YouTube Video Summarizer</h1>
+      <p class="subtitle">Paste a YouTube link and get an instant AI summary with key points.</p>
+
+      {% if demo_mode %}
+      <div class="demo-banner">
+        &#9888; <strong>Demo mode</strong> — no API key detected. Showing sample output.
+        Add <code>OPENAI_API_KEY</code> to a <code>.env</code> file to enable real summarization.
+      </div>
+      {% endif %}
+
+      <form id="sum-form">
+        <div class="field">
+          <label for="url">YouTube URL</label>
+          <input id="url" type="url" placeholder="https://www.youtube.com/watch?v=..." autocomplete="off" required />
+        </div>
+        <button type="submit" id="sum-btn">Summarize</button>
+      </form>
+
+      <div id="error" class="error hidden"></div>
+
+      <section id="result" class="hidden">
+        <div class="result-header">
+          <h2>Summary</h2>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span id="demo-badge" class="demo-badge hidden">Sample output</span>
+            <button id="copy-btn" class="secondary-btn">Copy</button>
+          </div>
+        </div>
+
+        <div id="summary-text" class="content"></div>
+
+        <div class="key-points-section">
+          <h3>Key Points</h3>
+          <ul id="key-points"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

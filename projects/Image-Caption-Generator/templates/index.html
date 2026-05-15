@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image Caption Generator</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Image Caption Generator</h1>
+      <p class="subtitle">Upload an image and get AI-generated captions and social media ideas.</p>
+
+      {% if demo_mode %}
+      <div class="demo-banner">
+        &#9888; <strong>Demo mode</strong> — no API key detected. Showing sample output.
+        Add <code>OPENAI_API_KEY</code> to a <code>.env</code> file to enable real captions.
+      </div>
+      {% endif %}
+
+      <form id="cap-form">
+        <div class="field">
+          <label for="image">Upload Image</label>
+          <input id="image" type="file" accept="image/*" {% if not demo_mode %}required{% endif %} />
+        </div>
+        <div id="preview-wrap" class="hidden">
+          <img id="preview" alt="Preview" />
+        </div>
+        <button type="submit" id="cap-btn">Generate Captions</button>
+      </form>
+
+      <div id="error" class="error hidden"></div>
+
+      <section id="result" class="hidden">
+        <div class="result-header">
+          <h2>Captions</h2>
+          <span id="demo-badge" class="demo-badge hidden">Sample output</span>
+        </div>
+
+        <div class="caption-box">
+          <h3>Main Caption</h3>
+          <p id="main-caption" class="content"></p>
+        </div>
+
+        <div class="caption-box">
+          <h3>Social Media Captions</h3>
+          <ul id="social-captions"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

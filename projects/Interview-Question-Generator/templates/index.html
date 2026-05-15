@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interview Question Generator</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Interview Question Generator</h1>
+      <p class="subtitle">Enter a topic and level to get AI-generated interview questions with answers.</p>
+
+      {% if demo_mode %}
+      <div class="demo-banner">
+        &#9888; <strong>Demo mode</strong> — no API key detected. Showing sample output.
+        Add <code>OPENAI_API_KEY</code> to a <code>.env</code> file to enable real questions.
+      </div>
+      {% endif %}
+
+      <form id="gen-form">
+        <div class="field">
+          <label for="topic">Topic / Skill</label>
+          <input id="topic" type="text" placeholder="e.g. Python, React, System Design, SQL…" autocomplete="off" required />
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="level">Difficulty</label>
+            <select id="level">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate" selected>Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="count">Number of Questions</label>
+            <select id="count">
+              <option value="3">3</option>
+              <option value="5" selected>5</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" id="gen-btn">Generate Questions</button>
+      </form>
+
+      <div id="error" class="error hidden"></div>
+
+      <section id="result" class="hidden">
+        <div class="result-header">
+          <h2>Questions &amp; Answers</h2>
+          <span id="demo-badge" class="demo-badge hidden">Sample output</span>
+        </div>
+        <ol id="questions-list"></ol>
+      </section>
+    </main>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

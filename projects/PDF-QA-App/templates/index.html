@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PDF Question Answering</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>PDF Question Answering</h1>
+      <p class="subtitle">Upload a PDF and ask any question about its content.</p>
+
+      {% if demo_mode %}
+      <div class="demo-banner">
+        &#9888; <strong>Demo mode</strong> — no API key detected. Showing sample output.
+        Add <code>OPENAI_API_KEY</code> to a <code>.env</code> file to enable real answers.
+      </div>
+      {% endif %}
+
+      <form id="qa-form" enctype="multipart/form-data">
+        <div class="field">
+          <label for="pdf">Upload PDF</label>
+          <input id="pdf" type="file" accept=".pdf" {% if not demo_mode %}required{% endif %} />
+        </div>
+        <div class="field">
+          <label for="question">Your Question</label>
+          <input id="question" type="text" placeholder="e.g. What is the main conclusion?" autocomplete="off" required />
+        </div>
+        <button type="submit" id="ask-btn">Ask Question</button>
+      </form>
+
+      <div id="error" class="error hidden"></div>
+
+      <section id="result" class="hidden">
+        <div class="result-header">
+          <h2>Answer</h2>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span id="demo-badge" class="demo-badge hidden">Sample output</span>
+            <button id="copy-btn" class="secondary-btn">Copy</button>
+          </div>
+        </div>
+        <div id="answer-content" class="content"></div>
+      </section>
+    </main>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

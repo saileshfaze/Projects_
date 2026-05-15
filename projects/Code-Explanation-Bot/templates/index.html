@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Code Explanation Bot</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Code Explanation Bot</h1>
+      <p class="subtitle">Paste any code and get an explanation, bug suggestions, and optimization ideas.</p>
+
+      {% if demo_mode %}
+      <div class="demo-banner">
+        &#9888; <strong>Demo mode</strong> — no API key detected. Showing sample output.
+        Add <code>OPENAI_API_KEY</code> to a <code>.env</code> file to enable real analysis.
+      </div>
+      {% endif %}
+
+      <form id="code-form">
+        <div class="field">
+          <label for="language">Language</label>
+          <select id="language">
+            <option value="Python">Python</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="TypeScript">TypeScript</option>
+            <option value="Java">Java</option>
+            <option value="C++">C++</option>
+            <option value="Go">Go</option>
+            <option value="Rust">Rust</option>
+            <option value="SQL">SQL</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="code">Code</label>
+          <textarea id="code" rows="12" placeholder="Paste your code here…" spellcheck="false" required></textarea>
+        </div>
+        <button type="submit" id="explain-btn">Explain Code</button>
+      </form>
+
+      <div id="error" class="error hidden"></div>
+
+      <section id="result" class="hidden">
+        <div class="result-header">
+          <h2>Analysis</h2>
+          <span id="demo-badge" class="demo-badge hidden">Sample output</span>
+        </div>
+
+        <div class="analysis-block">
+          <h3>What it does</h3>
+          <p id="summary-text" class="content"></p>
+        </div>
+
+        <div class="analysis-block">
+          <h3>Potential Bugs</h3>
+          <ul id="bugs-list" class="item-list"></ul>
+        </div>
+
+        <div class="analysis-block">
+          <h3>Optimization Ideas</h3>
+          <ul id="opts-list" class="item-list"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

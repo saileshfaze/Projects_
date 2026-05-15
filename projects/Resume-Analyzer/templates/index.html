@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Resume Analyzer</h1>
+      <p class="subtitle">Upload your resume and paste a job description to get AI-powered feedback.</p>
+
+      <form id="analyze-form" enctype="multipart/form-data">
+        <div class="field">
+          <label for="resume">Resume <span class="hint">(PDF, DOCX, or TXT — max 5 MB)</span></label>
+          <div class="file-drop" id="file-drop">
+            <input type="file" id="resume" name="resume" accept=".pdf,.docx,.txt" required />
+            <span id="file-label">Click to choose a file or drag &amp; drop here</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="job_description">Job Description</label>
+          <textarea
+            id="job_description"
+            name="job_description"
+            rows="8"
+            placeholder="Paste the full job description here…"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" id="submit-btn">Analyze</button>
+      </form>
+
+      <div id="error-box" class="error-box hidden"></div>
+
+      <section id="results" class="results hidden">
+        <div class="card" id="card-summary">
+          <h2>Profile Summary</h2>
+          <p id="summary-text"></p>
+        </div>
+        <div class="card" id="card-gaps">
+          <h2>Skill Gaps</h2>
+          <ul id="gaps-list"></ul>
+        </div>
+        <div class="card" id="card-suggestions">
+          <h2>Improvement Suggestions</h2>
+          <ul id="suggestions-list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>

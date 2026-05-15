@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Email Reply Generator</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Email Reply Generator</h1>
+      <p class="subtitle">Paste an email and get a professional AI-written reply instantly.</p>
+
+      {% if demo_mode %}
+      <div class="demo-banner">
+        &#9888; <strong>Demo mode</strong> — no API key detected. Showing sample output.
+        Add <code>OPENAI_API_KEY</code> to a <code>.env</code> file to enable real generation.
+      </div>
+      {% endif %}
+
+      <form id="gen-form">
+        <div class="field">
+          <label for="email-text">Original Email</label>
+          <textarea id="email-text" rows="8" placeholder="Paste the email you want to reply to…" required></textarea>
+        </div>
+        <div class="field">
+          <label for="tone">Tone</label>
+          <select id="tone">
+            <option value="formal">Formal</option>
+            <option value="casual">Casual</option>
+            <option value="friendly">Friendly</option>
+            <option value="assertive">Assertive</option>
+          </select>
+        </div>
+        <button type="submit" id="gen-btn">Generate Reply</button>
+      </form>
+
+      <div id="error" class="error hidden"></div>
+
+      <section id="result" class="hidden">
+        <div class="result-header">
+          <h2>Generated Reply</h2>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span id="demo-badge" class="demo-badge hidden">Sample output</span>
+            <button id="copy-btn" class="secondary-btn">Copy</button>
+          </div>
+        </div>
+        <pre id="reply-content" class="content"></pre>
+      </section>
+    </main>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

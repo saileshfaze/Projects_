@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal Learning Assistant</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Personal Learning Assistant</h1>
+      <p class="subtitle">Your AI Python tutor — ask any coding doubt and get a clear explanation, practice questions, and a learning roadmap.</p>
+
+      {% if demo_mode %}
+      <div class="demo-banner">
+        &#9888; <strong>Demo mode</strong> — no API key detected. Showing sample output.
+        Add <code>OPENAI_API_KEY</code> to a <code>.env</code> file to enable real tutoring.
+      </div>
+      {% endif %}
+
+      <form id="learn-form">
+        <div class="field">
+          <label for="question">Your Question</label>
+          <input id="question" type="text" placeholder="e.g. How do decorators work in Python?" autocomplete="off" required />
+        </div>
+        <div class="field">
+          <label for="level">Your Level</label>
+          <select id="level">
+            <option value="beginner" selected>Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+        <button type="submit" id="learn-btn">Ask Tutor</button>
+      </form>
+
+      <div id="error" class="error hidden"></div>
+
+      <section id="result" class="hidden">
+        <div class="result-header">
+          <h2>Tutor Response</h2>
+          <span id="demo-badge" class="demo-badge hidden">Sample output</span>
+        </div>
+
+        <div class="section-block">
+          <h3>Explanation</h3>
+          <div id="explanation" class="content"></div>
+        </div>
+
+        <div class="section-block">
+          <h3>Practice Questions</h3>
+          <ul id="practice-list" class="item-list"></ul>
+        </div>
+
+        <div class="section-block">
+          <h3>What to Learn Next</h3>
+          <ul id="next-list" class="tag-list"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

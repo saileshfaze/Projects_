@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog Generator</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Blog Generator</h1>
+      <p class="subtitle">Enter a topic and get a full AI-written blog post with SEO keywords.</p>
+
+      {% if demo_mode %}
+      <div class="demo-banner">
+        &#9888; <strong>Demo mode</strong> — no API key detected. Showing sample output.
+        Add <code>OPENAI_API_KEY</code> to a <code>.env</code> file to enable real generation.
+      </div>
+      {% endif %}
+
+      <form id="gen-form">
+        <div class="field">
+          <label for="topic">Topic</label>
+          <input id="topic" type="text" placeholder="e.g. The future of renewable energy" autocomplete="off" required />
+        </div>
+        <div class="field">
+          <label for="tone">Tone</label>
+          <select id="tone">
+            <option value="informative">Informative</option>
+            <option value="conversational">Conversational</option>
+            <option value="persuasive">Persuasive</option>
+            <option value="professional">Professional</option>
+            <option value="humorous">Humorous</option>
+          </select>
+        </div>
+        <button type="submit" id="gen-btn">Generate Blog Post</button>
+      </form>
+
+      <div id="error" class="error hidden"></div>
+
+      <section id="result" class="hidden">
+        <div class="result-header">
+          <h2 id="blog-title"></h2>
+          <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+            <span id="demo-badge" class="demo-badge hidden">Sample output</span>
+            <button id="copy-btn" class="secondary-btn" title="Copy content to clipboard">Copy</button>
+          </div>
+        </div>
+
+        <div id="blog-content" class="content"></div>
+
+        <div class="keywords-section">
+          <h3>SEO Keywords</h3>
+          <ul id="keywords"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="/static/script.js"></script>
+  </body>
+</html>
