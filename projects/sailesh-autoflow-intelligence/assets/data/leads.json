@@ -1,0 +1,58 @@
+[
+  {
+    "id": 101,
+    "customerName": "Marco R.",
+    "preferredVehicle": "Audi Q3 Sportback",
+    "source": "Website",
+    "temperature": "Hot",
+    "budget": 44000,
+    "status": "Test drive booked",
+    "nextAction": "Send financing simulation",
+    "assignedTo": "Sailesh"
+  },
+  {
+    "id": 102,
+    "customerName": "Giulia M.",
+    "preferredVehicle": "Tesla Model 3",
+    "source": "WhatsApp",
+    "temperature": "Warm",
+    "budget": 38000,
+    "status": "Waiting documents",
+    "nextAction": "Follow up on trade-in photos",
+    "assignedTo": "Sailesh"
+  },
+  {
+    "id": 103,
+    "customerName": "Luca B.",
+    "preferredVehicle": "BMW 320d",
+    "source": "Facebook Ads",
+    "temperature": "Warm",
+    "budget": 33000,
+    "status": "Negotiation",
+    "nextAction": "Offer warranty package",
+    "assignedTo": "Sales Team"
+  },
+  {
+    "id": 104,
+    "customerName": "Anita K.",
+    "preferredVehicle": "Toyota C-HR",
+    "source": "Walk-in",
+    "temperature": "Hot",
+    "budget": 35000,
+    "status": "Ready to close",
+    "nextAction": "Prepare final invoice",
+    "assignedTo": "Sailesh"
+  },
+  {
+    "id": 105,
+    "customerName": "Daniel P.",
+    "preferredVehicle": "Mercedes-Benz A 180",
+    "source": "Website",
+    "temperature": "Cold",
+    "budget": 27000,
+    "status": "Browsing",
+    "nextAction": "Send comparison email",
+    "assignedTo": "Marketing"
+  }
+]
+

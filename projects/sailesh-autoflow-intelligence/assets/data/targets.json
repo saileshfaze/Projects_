@@ -1,0 +1,9 @@
+[
+  { "month": "Jan", "target": 125000, "actual": 118500, "leads": 64 },
+  { "month": "Feb", "target": 132000, "actual": 139800, "leads": 72 },
+  { "month": "Mar", "target": 140000, "actual": 151200, "leads": 81 },
+  { "month": "Apr", "target": 155000, "actual": 162500, "leads": 88 },
+  { "month": "May", "target": 168000, "actual": 174600, "leads": 96 },
+  { "month": "Jun", "target": 180000, "actual": 192400, "leads": 104 }
+]
+
