@@ -1,0 +1,23 @@
+{
+  "name": "atlas-cre-desk",
+  "version": "1.0.0",
+  "description": "A polished full-stack commercial real estate deal operations platform.",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server.mjs",
+    "start": "NODE_ENV=production node src/server.mjs",
+    "test": "node --test",
+    "lint": "node --check src/server.mjs && node --check src/data/store.mjs && node --check src/security/auth.mjs"
+  },
+  "keywords": [
+    "full-stack",
+    "commercial-real-estate",
+    "dashboard",
+    "node"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}

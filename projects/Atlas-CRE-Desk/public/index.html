@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atlas CRE Desk</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">A</span>
+          <div>
+            <strong>Atlas CRE</strong>
+            <small>Deal Desk</small>
+          </div>
+        </div>
+        <nav>
+          <a class="active" href="#dashboard">Dashboard</a>
+          <a href="#pipeline">Pipeline</a>
+          <a href="#diligence">Diligence</a>
+          <a href="#activity">Activity</a>
+        </nav>
+        <button id="logout" class="ghost hidden">Sign out</button>
+      </aside>
+
+      <section id="login" class="login-panel">
+        <form id="login-form" class="login-card">
+          <p class="eyebrow">Secure workspace</p>
+          <h1>Atlas CRE Desk</h1>
+          <p>Track acquisition pipelines, diligence risk, and investment committee readiness in one focused cockpit.</p>
+          <label>Email<input name="email" type="email" value="analyst@atlas.local" required /></label>
+          <label>Password<input name="password" type="password" value="demo-password" required /></label>
+          <button type="submit">Enter desk</button>
+          <output id="login-error"></output>
+        </form>
+      </section>
+
+      <section id="workspace" class="workspace hidden">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Investment operations</p>
+            <h1>Deal command center</h1>
+          </div>
+          <div id="user-chip" class="user-chip"></div>
+        </header>
+
+        <section id="metrics" class="metrics"></section>
+
+        <section class="content-grid">
+          <section class="panel wide">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Live pipeline</p>
+                <h2>Priority acquisitions</h2>
+              </div>
+              <div class="filters">
+                <select id="stage-filter" aria-label="Filter by stage">
+                  <option value="">All stages</option>
+                  <option>Screening</option>
+                  <option>LOI</option>
+                  <option>Diligence</option>
+                  <option>IC Memo</option>
+                </select>
+                <select id="risk-filter" aria-label="Filter by risk">
+                  <option value="">All risk</option>
+                  <option>Low</option>
+                  <option>Medium</option>
+                  <option>High</option>
+                </select>
+              </div>
+            </div>
+            <div id="deals" class="deal-table"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Diligence</p>
+                <h2>Open tasks</h2>
+              </div>
+            </div>
+            <div id="tasks" class="task-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Signals</p>
+                <h2>Risk mix</h2>
+              </div>
+            </div>
+            <div id="risk-mix" class="mix-list"></div>
+          </section>
+
+          <section class="panel wide">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">New opportunity</p>
+                <h2>Add a deal</h2>
+              </div>
+            </div>
+            <form id="deal-form" class="deal-form">
+              <input name="name" placeholder="Deal name" required />
+              <input name="market" placeholder="Market" required />
+              <input name="asset" placeholder="Asset type" required />
+              <input name="sponsor" placeholder="Sponsor" required />
+              <select name="stage"><option>Screening</option><option>LOI</option><option>Diligence</option><option>IC Memo</option></select>
+              <select name="risk"><option>Low</option><option selected>Medium</option><option>High</option></select>
+              <input name="equity" type="number" min="0" placeholder="Equity" required />
+              <input name="irr" type="number" min="0" step="0.1" placeholder="IRR" required />
+              <input name="multiple" type="number" min="0" step="0.1" placeholder="Multiple" required />
+              <input name="nextMilestone" placeholder="Next milestone" />
+              <button type="submit">Add deal</button>
+            </form>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Audit trail</p>
+                <h2>Recent activity</h2>
+              </div>
+            </div>
+            <div id="activity" class="activity-list"></div>
+          </section>
+        </section>
+      </section>
+    </main>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
