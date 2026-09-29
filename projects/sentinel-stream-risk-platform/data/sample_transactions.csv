@@ -1,0 +1,6 @@
+transaction_id,account_id,amount_eur,country,channel,is_anomaly
+tx-demo-001,acct-0101,42.80,IT,card_present,0
+tx-demo-002,acct-0102,89.40,DE,ecommerce,0
+tx-demo-003,acct-0103,7900.00,IT,ecommerce,1
+tx-demo-004,acct-0104,22.10,FR,wallet,0
+tx-demo-005,acct-0105,12500.00,ES,transfer,1

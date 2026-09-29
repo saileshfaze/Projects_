@@ -1,0 +1,19 @@
+name: sentinel-ci
+on:
+  push:
+    paths: ["projects/sentinel-stream-risk-platform/**"]
+  pull_request:
+    paths: ["projects/sentinel-stream-risk-platform/**"]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/sentinel-stream-risk-platform
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -e ".[dev]"
+      - run: ruff check app tests scripts
+      - run: pytest
