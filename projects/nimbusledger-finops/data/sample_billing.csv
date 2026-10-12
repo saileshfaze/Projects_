@@ -1,0 +1,4 @@
+date,provider,service,project,cost,currency
+2026-10-01,aws,compute,search,18.42,EUR
+2026-10-01,azure,storage,analytics,4.10,EUR
+2026-10-02,gcp,compute,search,21.75,EUR
