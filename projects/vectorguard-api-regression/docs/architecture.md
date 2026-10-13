@@ -1,0 +1,3 @@
+# VectorGuard
+
+Architecture notes.
