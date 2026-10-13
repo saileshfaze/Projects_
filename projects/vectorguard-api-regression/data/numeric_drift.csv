@@ -1,0 +1,11 @@
+group,latency_ms
+baseline,101
+baseline,105
+baseline,98
+baseline,102
+baseline,110
+candidate,310
+candidate,330
+candidate,305
+candidate,315
+candidate,320

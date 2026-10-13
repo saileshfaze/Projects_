@@ -1,0 +1,12 @@
+# Reference policy; API accepts thresholds explicitly rather than loading this file.
+schema:
+  fail_on_breaking: true
+  warn_on_optional_removal: true
+lexical:
+  backend: token_bigram_cosine
+  minimum_similarity: 0.55
+numeric:
+  psi_limit: 0.20
+  ks_distance_limit: 0.30
+sampling:
+  maximum_samples_per_request: 1000

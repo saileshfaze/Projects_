@@ -1,0 +1,13 @@
+services:
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      VECTORGUARD_DB: /data/vectorguard.db
+      VECTORGUARD_API_KEY: ${VECTORGUARD_API_KEY:-}
+    volumes:
+      - vectorguard-data:/data
+    restart: unless-stopped
+volumes:
+  vectorguard-data:
