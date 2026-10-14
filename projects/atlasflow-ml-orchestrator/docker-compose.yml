@@ -1,0 +1,13 @@
+services:
+  atlasflow:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      ATLAS_DB_PATH: /app/var/atlasflow.sqlite3
+    volumes:
+      - atlasflow-data:/app/var
+    restart: unless-stopped
+
+volumes:
+  atlasflow-data:

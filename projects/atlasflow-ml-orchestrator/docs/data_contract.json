@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Synthetic customer retention row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "customer_id",
+    "age",
+    "usage_hours",
+    "incidents",
+    "label"
+  ],
+  "properties": {
+    "customer_id": {
+      "type": "string",
+      "pattern": "^SYN-[0-9]{5}$"
+    },
+    "age": {
+      "type": "integer",
+      "minimum": 18,
+      "maximum": 72
+    },
+    "usage_hours": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 30
+    },
+    "incidents": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 7
+    },
+    "label": {
+      "type": "integer",
+      "enum": [
+        0,
+        1
+      ]
+    }
+  }
+}

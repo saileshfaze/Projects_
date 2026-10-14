@@ -1,0 +1,9 @@
+[model.customer_retention]
+min_accuracy = 0.75
+min_f1 = 0.75
+max_drift_psi = 0.30
+allow_regression = false
+
+[experiment]
+seed = 42
+test_fraction = 0.25

@@ -1,0 +1,27 @@
+# Monorepo template: GitHub Actions requires a workflow at repository-root .github/workflows.
+name: AtlasFlow checks
+on:
+  push:
+    paths:
+      - "projects/atlasflow-ml-orchestrator/**"
+  pull_request:
+    paths:
+      - "projects/atlasflow-ml-orchestrator/**"
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/atlasflow-ml-orchestrator
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: projects/atlasflow-ml-orchestrator/pyproject.toml
+      - run: python -m pip install -e '.[dev,ml]'
+      - run: ruff check src tests scripts
+      - run: pytest -q
+      - run: python scripts/demo.py --db var/ci.sqlite3
+      - run: docker build -t atlasflow-ci .
