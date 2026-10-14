@@ -20,9 +20,12 @@ class Store:
 
     def initialize(self) -> None:
         sql = Path(__file__).with_name("schema.sql").read_text(encoding="utf-8")
-        with self.connect() as connection:
+        connection = self.connect()
+        try:
             connection.execute("PRAGMA journal_mode=WAL")
             connection.executescript(sql)
+        finally:
+            connection.close()
 
     @contextmanager
     def transaction(self):

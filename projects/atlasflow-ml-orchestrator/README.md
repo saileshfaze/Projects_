@@ -8,7 +8,7 @@ AtlasFlow is a compact control plane for teams that need to answer: *Which datas
 
 ## Architecture
 
-\`\`\`text
+```text
 Synthetic CSV -> SHA-256 dataset registration -> Experiment run
                                               |
                            scikit-learn training + holdout evaluation
@@ -20,13 +20,13 @@ Synthetic CSV -> SHA-256 dataset registration -> Experiment run
                         Registry + append-only promotion audit
                                               |
                             FastAPI / CLI / lineage queries
-\`\`\`
+```
 
 [Architecture](docs/architecture.md) · [API contract](docs/api.md) · [Operations](docs/operations.md) · [Security](docs/security.md)
 
 ## Quick start (Python 3.11+)
 
-\`\`\`bash
+```bash
 cd projects/atlasflow-ml-orchestrator
 python -m venv .venv
 source .venv/bin/activate
@@ -34,25 +34,25 @@ python -m pip install -e '.[dev,ml]'
 python scripts/demo.py --db var/atlasflow.sqlite3
 pytest -q
 uvicorn atlasflow.api:app --reload
-\`\`\`
+```
 
 The demo generates a **synthetic** customer-retention dataset, trains a logistic regression classifier using a stratified holdout, writes a portable JSON model manifest, and attempts a policy-controlled promotion. No external credentials or data downloads are required.
 
-Open **http://127.0.0.1:8000/docs** for interactive OpenAPI documentation. \`GET /health\` is a liveness check.
+Open **http://127.0.0.1:8000/docs** for interactive OpenAPI documentation. `GET /health` is a liveness check.
 
 ## API workflow
 
-1. \`POST /v1/datasets\` with a SHA-256 dataset digest and row count.
-2. \`POST /v1/runs\` with model name, dataset ID, algorithm, seed, config, and optional idempotency key.
-3. \`POST /v1/runs/{id}/evaluate\` with holdout accuracy, precision, recall, F1, PSI, and artifact digest.
-4. \`POST /v1/runs/{id}/promote\` with thresholds and a non-regression gate against the current champion.
-5. \`GET /v1/runs/{id}/lineage\` and \`GET /v1/runs/{id}/audit\` for traceability.
+1. `POST /v1/datasets` with a SHA-256 dataset digest and row count.
+2. `POST /v1/runs` with model name, dataset ID, algorithm, seed, config, and optional idempotency key.
+3. `POST /v1/runs/{id}/evaluate` with holdout accuracy, precision, recall, F1, PSI, and artifact digest.
+4. `POST /v1/runs/{id}/promote` with thresholds and a non-regression gate against the current champion.
+5. `GET /v1/runs/{id}/lineage` and `GET /v1/runs/{id}/audit` for traceability.
 
-Promotions are serialized using \`BEGIN IMMEDIATE\`; one champion is stored per model name. Rejected attempts are auditable. An idempotency key cannot silently be reused for a different run payload.
+Promotions are serialized using `BEGIN IMMEDIATE`; one champion is stored per model name. Rejected attempts are auditable. An idempotency key cannot silently be reused for a different run payload.
 
 ## Repository layout
 
-\`\`\`text
+```text
 src/atlasflow/        Domain logic, SQLite store, API, CLI, training
 migrations/           Versioned schema baseline
 tests/                Unit and API integration tests
@@ -64,7 +64,7 @@ docs/                 Architecture, API, security, runbook, ADR
 .github/workflows/    CI template for relocation to repository root
 Dockerfile            Non-root API container
 docker-compose.yml    API with persistent named SQLite volume
-\`\`\`
+```
 
 ## Engineering decisions and limitations
 
@@ -72,7 +72,7 @@ docker-compose.yml    API with persistent named SQLite volume
 - **Content digests** provide lineage references; the server currently trusts submitted hashes rather than uploading or verifying raw artifacts.
 - **PSI** is a descriptive distribution-shift signal, not a substitute for model performance monitoring.
 - **No authentication** is included. Bind the API to localhost for development; add authn/authz, audit retention, TLS, rate limiting and artifact verification before production exposure.
-- **CI template location:** GitHub Actions only executes workflows from the repository root \`.github/workflows/\`. The nested template documents the intended pipeline but is not automatically active in this monorepo.
+- **CI template location:** GitHub Actions only executes workflows from the repository root `.github/workflows/`. The nested template documents the intended pipeline but is not automatically active in this monorepo.
 - No benchmarks, deployment history, or external clients are claimed.
 
 ## License
