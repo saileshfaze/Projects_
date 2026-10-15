@@ -2,9 +2,8 @@
 from contextlib import asynccontextmanager
 from datetime import datetime, timedelta
 from hmac import compare_digest
-import re
 
-from fastapi import Depends, FastAPI, Header, HTTPException, Path, Query, Request
+from fastapi import Depends, FastAPI, Header, HTTPException, Path, Query
 from fastapi.responses import Response
 from prometheus_client import CONTENT_TYPE_LATEST, Counter, generate_latest
 
