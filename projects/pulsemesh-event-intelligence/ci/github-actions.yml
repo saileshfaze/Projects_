@@ -1,0 +1,26 @@
+# TEMPLATE: Copy to repository-root .github/workflows/pulsemesh-ci.yml to activate.
+name: PulseMesh CI
+on:
+  push:
+    paths:
+      - "projects/pulsemesh-event-intelligence/**"
+      - ".github/workflows/pulsemesh-ci.yml"
+  pull_request:
+    paths:
+      - "projects/pulsemesh-event-intelligence/**"
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/pulsemesh-event-intelligence
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -e ".[dev]"
+      - run: ruff check src tests scripts
+      - run: pytest -q
+      - run: python scripts/generate_dataset.py
+      - run: python scripts/generate_assets.py

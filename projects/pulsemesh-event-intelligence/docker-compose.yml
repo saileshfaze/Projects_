@@ -1,0 +1,14 @@
+services:
+  pulsemesh:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      PULSEMESH_DATABASE_PATH: /app/var/pulsemesh.sqlite3
+      PULSEMESH_ALLOWED_LATENESS_SECONDS: "3600"
+    volumes:
+      - pulsemesh_data:/app/var
+    restart: unless-stopped
+
+volumes:
+  pulsemesh_data:

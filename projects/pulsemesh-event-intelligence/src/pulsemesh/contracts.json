@@ -1,0 +1,11 @@
+{
+  "click": {
+    "1": {"required": {"page": "string", "session_id": "string"}}
+  },
+  "purchase": {
+    "1": {"required": {"order_id": "string", "currency": "string"}}
+  },
+  "telemetry": {
+    "1": {"required": {"device_id": "string"}}
+  }
+}
