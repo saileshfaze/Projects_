@@ -1,0 +1,16 @@
+services:
+  aegis:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      AEGIS_DB_PATH: /var/lib/aegis/features.db
+      AEGIS_API_KEY: ${AEGIS_API_KEY:-}
+      AEGIS_MAX_BATCH_SIZE: 5000
+    volumes:
+      - aegis-data:/var/lib/aegis
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+volumes:
+  aegis-data:

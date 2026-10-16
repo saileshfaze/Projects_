@@ -1,0 +1,7 @@
+[
+  {"event_id":"cust-001","entity_key":"customer-1","event_ts":"2026-01-01T09:00:00Z","available_ts":"2026-01-01T09:02:00Z","values":{"score":0.2,"count":1,"active":true}},
+  {"event_id":"cust-002","entity_key":"customer-1","event_ts":"2026-01-01T10:00:00Z","available_ts":"2026-01-01T15:00:00Z","values":{"score":0.9,"count":2,"active":true}},
+  {"event_id":"cust-003","entity_key":"customer-2","event_ts":"2026-01-01T09:00:00Z","available_ts":"2026-01-01T09:05:00Z","values":{"score":0.5,"count":3,"active":false}},
+  {"event_id":"cust-004","entity_key":"customer-1","event_ts":"2026-01-02T09:00:00Z","available_ts":"2026-01-02T09:00:00Z","values":{"score":0.6,"count":4,"active":true}},
+  {"event_id":"cust-005","entity_key":"customer-2","event_ts":"2026-01-02T09:00:00Z","available_ts":"2026-01-02T10:00:00Z","values":{"score":0.3,"count":2,"active":true}}
+]

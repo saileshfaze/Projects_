@@ -1,0 +1,7 @@
+{
+  "name": "customer_risk",
+  "version": 1,
+  "description": "Synthetic customer risk features",
+  "ttl_seconds": 86400,
+  "fields": {"score": "number", "count": "integer", "active": "boolean"}
+}
