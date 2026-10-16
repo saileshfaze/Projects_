@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aegis-feature-store"
+version = "0.1.0"
+description = "Point-in-time-correct feature registry, historical joins and online serving"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+authors = [{name = "Sailesh"}]
+dependencies = [
+  "fastapi>=0.115,<1",
+  "pydantic>=2.8,<3",
+  "uvicorn>=0.30,<1",
+  "prometheus-client>=0.20,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "httpx>=0.27,<1", "ruff>=0.7,<1"]
+ml = ["scikit-learn>=1.5,<2"]
+
+[project.scripts]
+aegis = "aegis_feature_store.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/aegis_feature_store"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

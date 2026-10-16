@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="340" viewBox="0 0 1000 340" role="img" aria-labelledby="title desc">
+  <title id="title">Aegis Feature Store Architecture</title>
+  <desc id="desc">Feature registry and event ingestion flow into a SQLite event store; offline joins and online snapshots serve ML consumers.</desc>
+  <rect width="1000" height="340" fill="#f8fafc"/>
+  <text x="45" y="43" font-family="Arial,sans-serif" font-size="26" font-weight="bold" fill="#0f172a">Aegis Feature Store</text>
+  <g font-family="Arial,sans-serif" font-size="16" text-anchor="middle">
+    <rect x="40" y="105" width="190" height="85" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="135" y="140" fill="#1e3a8a">Feature registry</text>
+    <text x="135" y="164" font-size="12" fill="#1e40af">Contracts + versions</text>
+    <rect x="40" y="218" width="190" height="80" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="135" y="250" fill="#1e3a8a">Event ingestion</text>
+    <text x="135" y="273" font-size="12" fill="#1e40af">Atomic + idempotent</text>
+    <rect x="314" y="142" width="235" height="110" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+    <text x="431" y="181" fill="#115e59">SQLite event history</text>
+    <text x="431" y="205" font-size="12" fill="#115e59">event_ts + available_ts</text>
+    <text x="431" y="227" font-size="12" fill="#115e59">TTL + audit</text>
+    <rect x="646" y="93" width="270" height="82" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="781" y="126" fill="#92400e">Offline as-of join</text>
+    <text x="781" y="149" font-size="12" fill="#92400e">Leakage-safe training data</text>
+    <rect x="646" y="214" width="270" height="82" rx="12" fill="#fce7f3" stroke="#db2777" stroke-width="2"/>
+    <text x="781" y="246" fill="#9d174d">Online snapshot</text>
+    <text x="781" y="269" font-size="12" fill="#9d174d">Materialize + serve</text>
+  </g>
+  <g stroke="#475569" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M230 148 L314 178"/><path d="M230 257 L314 221"/>
+    <path d="M549 174 L646 133"/><path d="M549 221 L646 255"/>
+  </g>
+</svg>

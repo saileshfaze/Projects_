@@ -1,0 +1,21 @@
+# Illustrative release pipeline template; not active in this nested folder.
+# Production release requires provenance/signing, vulnerability scanning,
+# registry credentials supplied as protected CI secrets, and an approval gate.
+name: Aegis release template
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build -t aegis-feature-store:local projects/aegis-feature-store
+      - name: Validate container starts
+        run: |
+          docker run -d --name aegis-ci -p 127.0.0.1:18000:8000 aegis-feature-store:local
+          sleep 5
+          curl --fail http://127.0.0.1:18000/health
+          docker rm -f aegis-ci

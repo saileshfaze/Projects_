@@ -1,0 +1,10 @@
+# Declarative example for feature-view design review.
+# Convert to JSON for the current CLI (YAML ingestion is intentionally not implicit).
+name: customer_risk
+version: 1
+description: Synthetic customer risk metrics
+ttl_seconds: 86400
+fields:
+  score: number
+  count: integer
+  active: boolean

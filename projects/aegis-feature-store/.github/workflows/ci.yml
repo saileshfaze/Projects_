@@ -1,0 +1,33 @@
+# TEMPLATE: nested project workflows are not activated by GitHub Actions.
+# To enable, copy this file to repository-root .github/workflows/aegis-ci.yml.
+name: Aegis Feature Store CI
+on:
+  push:
+    paths:
+      - "projects/aegis-feature-store/**"
+      - ".github/workflows/aegis-ci.yml"
+  pull_request:
+    paths:
+      - "projects/aegis-feature-store/**"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        working-directory: projects/aegis-feature-store
+        run: python -m pip install -e '.[dev]'
+      - name: Lint
+        working-directory: projects/aegis-feature-store
+        run: ruff check src tests scripts examples
+      - name: Test
+        working-directory: projects/aegis-feature-store
+        run: pytest -q
+      - name: Build container
+        working-directory: projects/aegis-feature-store
+        run: docker build -t aegis-feature-store:ci .
