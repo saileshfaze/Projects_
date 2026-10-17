@@ -1,0 +1,3 @@
+# Security and privacy
+
+The sample is offline-first and uses deterministic fabricated data. No external API keys or user credentials are required. A local SQLite file stores full scenario inputs and results. Do not submit customer or personal energy readings to an unprotected instance. Bind Docker to localhost, use a reverse proxy with TLS and authentication for any network exposure, enforce request size and concurrency limits, and separate tenants before multi-user operation. The solver accepts at most 168 slots but can still consume significant CPU; production deployments need worker isolation and quotas. Never commit .env or SQLite databases.

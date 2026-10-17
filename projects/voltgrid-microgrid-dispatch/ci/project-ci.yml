@@ -1,0 +1,29 @@
+# Template: copy to repository-root .github/workflows/voltgrid-ci.yml to activate.
+name: VoltGrid CI
+on:
+  push:
+    paths:
+      - 'projects/voltgrid-microgrid-dispatch/**'
+      - '.github/workflows/voltgrid-ci.yml'
+  pull_request:
+    paths:
+      - 'projects/voltgrid-microgrid-dispatch/**'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/voltgrid-microgrid-dispatch
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install
+        run: python -m pip install -e '.[dev]'
+      - name: Lint
+        run: ruff check src tests scripts
+      - name: Tests
+        run: pytest -q
+      - name: Build image
+        run: docker build -t voltgrid:ci .

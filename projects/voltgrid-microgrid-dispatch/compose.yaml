@@ -1,0 +1,13 @@
+services:
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      VOLTGRID_DB_PATH: /data/voltgrid.sqlite3
+      VOLTGRID_SOLVER_TIMEOUT: "20"
+    volumes:
+      - voltgrid_data:/data
+    restart: unless-stopped
+volumes:
+  voltgrid_data:

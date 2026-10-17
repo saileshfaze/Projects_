@@ -1,0 +1,9 @@
+# Reference planning assumptions; API values are explicitly provided in Scenario.
+[solver]
+time_limit_seconds = 20.0
+relative_gap = 0.001
+[units]
+power = "kW"
+energy = "kWh"
+currency = "USD"
+carbon = "kgCO2/kWh"

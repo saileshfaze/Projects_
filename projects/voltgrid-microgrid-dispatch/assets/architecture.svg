@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="230" viewBox="0 0 1100 230" role="img" aria-label="VoltGrid data flow">
+<rect width="1100" height="230" rx="18" fill="#0e1c2f"/>
+<text x="38" y="49" fill="#d4e6fa" font-size="28" font-family="sans-serif" font-weight="bold">VoltGrid | Microgrid Dispatch</text>
+<g font-family="sans-serif" font-size="17" text-anchor="middle" fill="#13233b">
+<rect x="36" y="90" width="195" height="95" rx="12" fill="#c9ecff"/><text x="133" y="126">Synthetic CSV / JSON</text><text x="133" y="152">Validated Scenario</text>
+<rect x="302" y="90" width="195" height="95" rx="12" fill="#bbf7d0"/><text x="399" y="126">Pydantic Contracts</text><text x="399" y="152">Tariff + SOC Rules</text>
+<rect x="568" y="90" width="195" height="95" rx="12" fill="#fde68a"/><text x="665" y="126">SciPy HiGHS MILP</text><text x="665" y="152">Dispatch + Baseline</text>
+<rect x="834" y="90" width="230" height="95" rx="12" fill="#e9d5ff"/><text x="949" y="126">FastAPI + SQLite</text><text x="949" y="152">Reports + Invariants</text></g>
+<g stroke="#dbeafe" stroke-width="5" fill="none"><path d="M231 138H298"/><path d="M497 138H564"/><path d="M763 138H830"/></g>
+</svg>
