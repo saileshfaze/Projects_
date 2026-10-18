@@ -1,0 +1,28 @@
+# Template: copy to repository root .github/workflows/routeforge-ci.yml to activate.
+name: RouteForge CI
+on:
+  push:
+    paths:
+      - "projects/routeforge-logistics-digital-twin/**"
+  pull_request:
+    paths:
+      - "projects/routeforge-logistics-digital-twin/**"
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/routeforge-logistics-digital-twin
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: python -m pip install -e ".[dev]"
+      - name: Run tests
+        run: python -m pytest -q
+      - name: Lint
+        run: ruff check src tests scripts
+      - name: Smoke test
+        run: python -m routeforge.cli data/example_problem.json --output artifacts/plan.json

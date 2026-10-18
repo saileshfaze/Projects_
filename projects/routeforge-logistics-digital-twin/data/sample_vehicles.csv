@@ -1,0 +1,4 @@
+id,capacity,shift_start,shift_end,speed_kmh,fixed_cost,cost_per_km,emissions_g_per_km,max_km
+van-a,16,480,1020,36,20,0.95,220,150
+van-b,18,480,1020,34,18,1.05,260,150
+ev-c,12,480,1020,32,16,0.55,65,110

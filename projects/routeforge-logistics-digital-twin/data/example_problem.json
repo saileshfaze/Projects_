@@ -1,0 +1,114 @@
+{
+  "depot": {
+    "id": "caserta-hub",
+    "lat": 41.0725,
+    "lon": 14.3316
+  },
+  "jobs": [
+    {
+      "id": "CE-001",
+      "lat": 41.0802,
+      "lon": 14.345,
+      "demand": 4,
+      "earliest": 500,
+      "latest": 660,
+      "service_min": 12,
+      "priority": 2
+    },
+    {
+      "id": "CE-002",
+      "lat": 41.092,
+      "lon": 14.311,
+      "demand": 5,
+      "earliest": 510,
+      "latest": 780,
+      "service_min": 10,
+      "priority": 1
+    },
+    {
+      "id": "CE-003",
+      "lat": 41.055,
+      "lon": 14.355,
+      "demand": 3,
+      "earliest": 540,
+      "latest": 780,
+      "service_min": 15,
+      "priority": 2
+    },
+    {
+      "id": "CE-004",
+      "lat": 41.065,
+      "lon": 14.302,
+      "demand": 6,
+      "earliest": 600,
+      "latest": 840,
+      "service_min": 12,
+      "priority": 1
+    },
+    {
+      "id": "CE-005",
+      "lat": 41.103,
+      "lon": 14.369,
+      "demand": 4,
+      "earliest": 520,
+      "latest": 760,
+      "service_min": 8,
+      "priority": 3
+    },
+    {
+      "id": "CE-006",
+      "lat": 41.048,
+      "lon": 14.325,
+      "demand": 7,
+      "earliest": 550,
+      "latest": 900,
+      "service_min": 10,
+      "priority": 1
+    },
+    {
+      "id": "CE-007",
+      "lat": 41.118,
+      "lon": 14.337,
+      "demand": 3,
+      "earliest": 560,
+      "latest": 850,
+      "service_min": 8,
+      "priority": 1
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "van-a",
+      "capacity": 16,
+      "shift_start": 480,
+      "shift_end": 1020,
+      "speed_kmh": 36,
+      "fixed_cost": 20,
+      "cost_per_km": 0.95,
+      "emissions_g_per_km": 220,
+      "max_km": 150
+    },
+    {
+      "id": "van-b",
+      "capacity": 18,
+      "shift_start": 480,
+      "shift_end": 1020,
+      "speed_kmh": 34,
+      "fixed_cost": 18,
+      "cost_per_km": 1.05,
+      "emissions_g_per_km": 260,
+      "max_km": 150
+    },
+    {
+      "id": "ev-c",
+      "capacity": 12,
+      "shift_start": 480,
+      "shift_end": 1020,
+      "speed_kmh": 32,
+      "fixed_cost": 16,
+      "cost_per_km": 0.55,
+      "emissions_g_per_km": 65,
+      "max_km": 110
+    }
+  ]
+}

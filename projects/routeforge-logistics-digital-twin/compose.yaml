@@ -1,0 +1,12 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      ROUTEFORGE_DB: /app/data/routeforge.db
+    volumes:
+      - routeforge-data:/app/data
+    restart: unless-stopped
+volumes:
+  routeforge-data:
