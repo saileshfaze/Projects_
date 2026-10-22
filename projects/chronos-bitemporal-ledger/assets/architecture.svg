@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="310" viewBox="0 0 960 310">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#20c997"/></marker></defs>
+<rect width="960" height="310" fill="#0b1424"/>
+<text x="480" y="52" fill="white" font-size="26" text-anchor="middle" font-family="Arial">Chronos Bitemporal Ledger</text>
+<text x="480" y="80" fill="#9fb3ca" font-size="14" text-anchor="middle" font-family="Arial">Valid-time corrections · System-time history · Tenant audit chain</text>
+<rect x="25" y="110" width="205" height="105" rx="13" fill="#12233d" stroke="#48b0e5" stroke-width="2"/>
+<text x="127" y="152" fill="white" font-size="18" text-anchor="middle" font-weight="bold">REST API / CLI</text>
+<text x="127" y="182" fill="#b8d8ef" font-size="13" text-anchor="middle">FastAPI · Pydantic</text>
+<rect x="260" y="110" width="205" height="105" rx="13" fill="#12233d" stroke="#48b0e5" stroke-width="2"/>
+<text x="362" y="152" fill="white" font-size="18" text-anchor="middle" font-weight="bold">Correction engine</text>
+<text x="362" y="182" fill="#b8d8ef" font-size="13" text-anchor="middle">idempotency · intervals</text>
+<rect x="495" y="110" width="205" height="105" rx="13" fill="#12233d" stroke="#48b0e5" stroke-width="2"/>
+<text x="597" y="152" fill="white" font-size="18" text-anchor="middle" font-weight="bold">SQLite ledger</text>
+<text x="597" y="182" fill="#b8d8ef" font-size="13" text-anchor="middle">versions · operations</text>
+<rect x="730" y="110" width="205" height="105" rx="13" fill="#12233d" stroke="#48b0e5" stroke-width="2"/>
+<text x="832" y="152" fill="white" font-size="18" text-anchor="middle" font-weight="bold">Audit verifier</text>
+<text x="832" y="182" fill="#b8d8ef" font-size="13" text-anchor="middle">SHA-256 · closures</text>
+<path d="M232 162 h23" stroke="#20c997" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M467 162 h23" stroke="#20c997" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M702 162 h23" stroke="#20c997" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="480" y="275" fill="#9fb3ca" font-size="13" text-anchor="middle" font-family="Arial">ACID write transaction · Half-open intervals · Point-in-time reconstruction</text>
+</svg>
