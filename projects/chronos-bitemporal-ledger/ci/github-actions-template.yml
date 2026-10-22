@@ -1,0 +1,38 @@
+# Copy to repository-root .github/workflows/chronos.yml to activate.
+# This file is intentionally a template, not an active GitHub Actions workflow.
+name: Chronos Bitemporal Ledger CI
+on:
+  push:
+    paths:
+      - 'projects/chronos-bitemporal-ledger/**'
+      - '.github/workflows/chronos.yml'
+  pull_request:
+    paths:
+      - 'projects/chronos-bitemporal-ledger/**'
+      - '.github/workflows/chronos.yml'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install
+        working-directory: projects/chronos-bitemporal-ledger
+        run: python -m pip install -e '.[dev]'
+      - name: Unit and integration tests
+        working-directory: projects/chronos-bitemporal-ledger
+        run: pytest -q
+      - name: Static checks
+        working-directory: projects/chronos-bitemporal-ledger
+        run: ruff check src tests scripts
+      - name: Bytecode compilation
+        working-directory: projects/chronos-bitemporal-ledger
+        run: python -m compileall -q src
+      - name: Container build
+        working-directory: projects/chronos-bitemporal-ledger
+        run: docker build -t chronos-ledger:ci .
