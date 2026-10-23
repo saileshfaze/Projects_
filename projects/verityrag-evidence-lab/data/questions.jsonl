@@ -1,0 +1,14 @@
+{"id": "q01", "question": "When do redis cache entries expire?", "slice": "direct"}
+{"id": "q02", "question": "What happens under cache memory pressure?", "slice": "direct"}
+{"id": "q03", "question": "How quickly must severity one incidents be acknowledged?", "slice": "direct"}
+{"id": "q04", "question": "How long are monthly database backups retained?", "slice": "direct"}
+{"id": "q05", "question": "What is the recovery point objective?", "slice": "direct"}
+{"id": "q06", "question": "When does a deployment rollout pause?", "slice": "direct"}
+{"id": "q07", "question": "How often are API keys rotated?", "slice": "direct"}
+{"id": "q08", "question": "What is the checkout service availability target?", "slice": "direct"}
+{"id": "q09", "question": "How often are service accounts reviewed?", "slice": "direct"}
+{"id": "q10", "question": "Where do payment service alerts go?", "slice": "direct"}
+{"id": "q11", "question": "redis cach expiratn", "slice": "typo"}
+{"id": "q12", "question": "sev 2 acknowledge", "slice": "abbreviated"}
+{"id": "q13", "question": "What is the rollback latency condition?", "slice": "direct"}
+{"id": "q14", "question": "What is the company's vacation policy?", "slice": "unanswerable"}
