@@ -1,0 +1,31 @@
+# Template: copy to .github/workflows/verityrag.yml to activate.
+name: VerityRAG CI
+on:
+  push:
+    paths:
+      - 'projects/verityrag-evidence-lab/**'
+  pull_request:
+    paths:
+      - 'projects/verityrag-evidence-lab/**'
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install
+        run: python -m pip install -e './projects/verityrag-evidence-lab[dev]'
+      - name: Test
+        working-directory: projects/verityrag-evidence-lab
+        run: pytest -q
+      - name: Lint
+        working-directory: projects/verityrag-evidence-lab
+        run: ruff check src tests scripts
+      - name: Reproduce data and diagram
+        working-directory: projects/verityrag-evidence-lab
+        run: |
+          python scripts/generate_data.py
+          python scripts/generate_diagram.py
+          git diff --exit-code -- data assets

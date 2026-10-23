@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="910" height="220" viewBox="0 0 910 220">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#0f172a"/></marker></defs>
+<rect width="910" height="220" fill="#f8fafc"/>
+<text x="24" y="42" font-size="23" font-family="Arial" fill="#0f172a">VerityRAG — evidence workflow</text>
+<rect x="24" y="80" width="194" height="100" rx="10" fill="#e0f2fe" stroke="#0284c7"/>
+<text x="36" y="118" font-size="16" font-family="Arial" fill="#0c4a6e">Synthetic corpus</text>
+<text x="36" y="145" font-size="12" font-family="Arial" fill="#075985">JSONL + SQLite</text>
+<path d="M 218 130 L 245 130" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="248" y="80" width="194" height="100" rx="10" fill="#e0f2fe" stroke="#0284c7"/>
+<text x="260" y="118" font-size="16" font-family="Arial" fill="#0c4a6e">Hybrid retrieval</text>
+<text x="260" y="145" font-size="12" font-family="Arial" fill="#075985">BM25 + char TF-IDF</text>
+<path d="M 442 130 L 469 130" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="472" y="80" width="194" height="100" rx="10" fill="#e0f2fe" stroke="#0284c7"/>
+<text x="484" y="118" font-size="16" font-family="Arial" fill="#0c4a6e">Evidence extraction</text>
+<text x="484" y="145" font-size="12" font-family="Arial" fill="#075985">filter + exact spans</text>
+<path d="M 666 130 L 693 130" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="696" y="80" width="194" height="100" rx="10" fill="#e0f2fe" stroke="#0284c7"/>
+<text x="708" y="118" font-size="16" font-family="Arial" fill="#0c4a6e">Evaluation</text>
+<text x="708" y="145" font-size="12" font-family="Arial" fill="#075985">MRR / nDCG / slices</text>
+</svg>
