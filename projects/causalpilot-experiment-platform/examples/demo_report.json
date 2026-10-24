@@ -1,0 +1,57 @@
+{
+  "experiment_id": "checkout-demo",
+  "assigned": {
+    "A": 391,
+    "B": 409
+  },
+  "observed": {
+    "A": 391,
+    "B": 409
+  },
+  "srm": {
+    "chi_square": 0.405,
+    "p_value": 0.5245182802130763,
+    "flag": false
+  },
+  "alpha_per_look": 0.05,
+  "eligible": true,
+  "missing_outcome_rate": {
+    "A": 0.0,
+    "B": 0.0
+  },
+  "warnings": [],
+  "cuped_theta": 0.3620022238629956,
+  "revenue": {
+    "mean_A": 6.038618925831202,
+    "mean_B": 9.17158924205379,
+    "difference": 3.132970316222587,
+    "ci_low": 1.5945691881515023,
+    "ci_high": 4.7563605950512455,
+    "draws": 1200
+  },
+  "revenue_cuped": {
+    "mean_A": 6.360015297749495,
+    "mean_B": 8.864337453740703,
+    "difference": 2.5043221559912077,
+    "ci_low": 1.0861716096655742,
+    "ci_high": 4.015228567110413,
+    "draws": 1200
+  },
+  "conversion": {
+    "mean_A": 0.32225063938618925,
+    "mean_B": 0.4132029339853301,
+    "difference": 0.09095229459914084,
+    "ci_low": 0.02546914375402548,
+    "ci_high": 0.15632288846228404,
+    "draws": 1200
+  },
+  "refund_guardrail": {
+    "mean_A": 0.02557544757033248,
+    "mean_B": 0.012224938875305624,
+    "difference": -0.013350508695026856,
+    "ci_low": -0.03336063882340435,
+    "ci_high": 0.004439747622233755,
+    "draws": 1200
+  },
+  "interpretation": "Exploratory bootstrap intervals; pre-register stopping, metrics, and analysis plan before production use"
+}

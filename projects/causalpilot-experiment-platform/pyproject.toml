@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "causalpilot-experiment-platform"
+version = "0.1.0"
+description = "Auditable A/B assignment and exploratory experiment analytics"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "Sailesh"}]
+maintainers = [{name = "Sailesh"}]
+keywords = ["experimentation", "cuped", "ab-testing", "analytics", "sqlite"]
+dependencies = []
+
+[project.optional-dependencies]
+api = ["fastapi>=0.110,<1", "uvicorn>=0.29,<1", "pydantic>=2,<3"]
+dev = ["pytest>=8,<10", "httpx>=0.27,<1", "ruff>=0.6,<1", "fastapi>=0.110,<1", "pydantic>=2,<3"]
+
+[project.scripts]
+causalpilot = "causalpilot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
