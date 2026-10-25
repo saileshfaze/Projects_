@@ -1,0 +1,4 @@
+region,relative_y_start,relative_y_end,relative_x_start,relative_x_end,change
+northwest,0.1667,0.3333,0.1250,0.3333,clearing
+southeast,0.5000,0.7500,0.5000,0.8333,clearing
+east_center,0.2500,0.3333,0.6000,0.8000,clearing

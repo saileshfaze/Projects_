@@ -1,0 +1,19 @@
+services:
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      TERRAFLUX_DATA_ROOT: /app/data/generated
+      TERRAFLUX_DB_PATH: /app/state/reports.sqlite3
+    volumes:
+      - terraflux-data:/app/data/generated
+      - terraflux-state:/app/state
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+volumes:
+  terraflux-data:
+  terraflux-state:

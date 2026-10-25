@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1290" height="180" viewBox="0 0 1290 180">
+<rect width="1290" height="180" fill="#f5f8fc"/>
+<text x="20" y="35" font-family="Arial" font-size="23" fill="#142c43">TerraFlux · Change screening pipeline</text>
+<rect x="20" y="75" width="190" height="70" rx="9" fill="#173c55"/>
+<text x="115" y="116" text-anchor="middle" font-family="Arial" font-size="13" fill="white">Synthetic / NPZ scenes</text>
+<path d="M210 110 h20" stroke="#159e9c" stroke-width="3"/>
+<rect x="230" y="75" width="190" height="70" rx="9" fill="#173c55"/>
+<text x="325" y="116" text-anchor="middle" font-family="Arial" font-size="13" fill="white">Contracts &amp; QA masks</text>
+<path d="M420 110 h20" stroke="#159e9c" stroke-width="3"/>
+<rect x="440" y="75" width="190" height="70" rx="9" fill="#173c55"/>
+<text x="535" y="116" text-anchor="middle" font-family="Arial" font-size="13" fill="white">NDVI + NBR deltas</text>
+<path d="M630 110 h20" stroke="#159e9c" stroke-width="3"/>
+<rect x="650" y="75" width="190" height="70" rx="9" fill="#173c55"/>
+<text x="745" y="116" text-anchor="middle" font-family="Arial" font-size="13" fill="white">Connected components</text>
+<path d="M840 110 h20" stroke="#159e9c" stroke-width="3"/>
+<rect x="860" y="75" width="190" height="70" rx="9" fill="#173c55"/>
+<text x="955" y="116" text-anchor="middle" font-family="Arial" font-size="13" fill="white">GeoJSON + uncertainty</text>
+<path d="M1050 110 h20" stroke="#159e9c" stroke-width="3"/>
+<rect x="1070" y="75" width="190" height="70" rx="9" fill="#173c55"/>
+<text x="1165" y="116" text-anchor="middle" font-family="Arial" font-size="13" fill="white">SQLite / REST API</text>
+</svg>

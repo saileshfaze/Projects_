@@ -1,0 +1,12 @@
+{
+  "dataset_id": "demo",
+  "synthetic": true,
+  "bands": ["red", "nir", "swir"],
+  "cloud_mask": "boolean",
+  "crs": "EPSG:3857",
+  "pixel_size_m": 10,
+  "seed": 7,
+  "size": 96,
+  "ground_truth": "truth.npy",
+  "note": "Generate the actual NPZ scenes with terraflux generate."
+}
