@@ -1,0 +1,109 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentDescribes": [
+    "SPDXRef-app"
+  ],
+  "name": "shopfront",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-app",
+      "externalRefs": [
+        {
+          "referenceLocator": "pkg:pypi/shopfront@1.0.0",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "MIT",
+      "name": "shopfront",
+      "versionInfo": "1.0.0"
+    },
+    {
+      "SPDXID": "SPDXRef-web",
+      "externalRefs": [
+        {
+          "referenceLocator": "pkg:pypi/displaykit@2.1.0",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "name": "displaykit",
+      "versionInfo": "2.1.0"
+    },
+    {
+      "SPDXID": "SPDXRef-core",
+      "externalRefs": [
+        {
+          "referenceLocator": "pkg:pypi/querybolt@1.4.2",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "MIT",
+      "name": "querybolt",
+      "versionInfo": "1.4.2"
+    },
+    {
+      "SPDXID": "SPDXRef-crypto",
+      "externalRefs": [
+        {
+          "referenceLocator": "pkg:pypi/cipherleaf@0.8.1",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "BSD-3-Clause",
+      "name": "cipherleaf",
+      "versionInfo": "0.8.1"
+    },
+    {
+      "SPDXID": "SPDXRef-log",
+      "externalRefs": [
+        {
+          "referenceLocator": "pkg:pypi/tracelog@3.0.0",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "GPL-3.0-only",
+      "name": "tracelog",
+      "versionInfo": "3.0.0"
+    },
+    {
+      "SPDXID": "SPDXRef-unused",
+      "externalRefs": [
+        {
+          "referenceLocator": "pkg:pypi/ghostcache@0.1.0",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "MIT",
+      "name": "ghostcache",
+      "versionInfo": "0.1.0"
+    }
+  ],
+  "relationships": [
+    {
+      "relatedSpdxElement": "SPDXRef-web",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-app"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-core",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-app"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-crypto",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-web"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-log",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-web"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-crypto",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-core"
+    }
+  ],
+  "spdxVersion": "SPDX-2.3"
+}

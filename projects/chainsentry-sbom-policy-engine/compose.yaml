@@ -1,0 +1,16 @@
+services:
+  chainsentry:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      CHAINSENTRY_DB: /data/chainsentry.db
+    volumes:
+      - chainsentry-data:/data
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+volumes:
+  chainsentry-data:

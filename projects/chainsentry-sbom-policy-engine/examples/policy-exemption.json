@@ -1,0 +1,17 @@
+{
+  "deny_licenses": [
+    "GPL-3.0-only"
+  ],
+  "exemptions": [
+    {
+      "advisory": "DEMO-2026-0001",
+      "expires": "2027-01-01",
+      "justification": "Demo-only exception to exercise expiry handling",
+      "purl": "pkg:pypi/cipherleaf@0.8.1"
+    }
+  ],
+  "fail_at": "high",
+  "fail_unreachable": false,
+  "require_license": true,
+  "require_purl": true
+}

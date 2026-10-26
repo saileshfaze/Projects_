@@ -1,0 +1,10 @@
+{
+  "deny_licenses": [
+    "GPL-3.0-only"
+  ],
+  "exemptions": [],
+  "fail_at": "high",
+  "fail_unreachable": false,
+  "require_license": true,
+  "require_purl": true
+}

@@ -1,0 +1,29 @@
+{
+  "advisories": [
+    {
+      "fixed": "0.9.0",
+      "id": "DEMO-2026-0001",
+      "introduced": "0",
+      "purl_name": "pypi/cipherleaf",
+      "severity": "critical",
+      "summary": "Fictional cryptographic validation flaw"
+    },
+    {
+      "fixed": "0.2.0",
+      "id": "DEMO-2026-0002",
+      "introduced": "0",
+      "purl_name": "pypi/ghostcache",
+      "severity": "high",
+      "summary": "Fictional cache isolation flaw"
+    },
+    {
+      "fixed": "2.1.0",
+      "id": "DEMO-2026-0003",
+      "introduced": "2.0.0",
+      "purl_name": "pypi/displaykit",
+      "severity": "medium",
+      "summary": "Fictional issue fixed in the sample version"
+    }
+  ],
+  "feed_type": "synthetic-demo"
+}

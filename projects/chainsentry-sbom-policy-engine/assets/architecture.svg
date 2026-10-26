@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="200" viewBox="0 0 1160 200">
+<rect width="1160" height="200" fill="#f8fafc"/>
+<text x="24" y="35" font-size="23" fill="#0f172a" font-family="sans-serif">ChainSentry · offline analysis pipeline</text>
+<rect x="20" y="72" rx="9" width="206" height="74" fill="#e0f2fe" stroke="#0369a1"/>
+<text x="123" y="115" text-anchor="middle" font-size="15" fill="#0f172a" font-family="sans-serif">CycloneDX / SPDX</text>
+<path d="M 226 109 h 25" stroke="#0369a1" stroke-width="2"/>
+<rect x="252" y="72" rx="9" width="206" height="74" fill="#e0f2fe" stroke="#0369a1"/>
+<text x="355" y="115" text-anchor="middle" font-size="15" fill="#0f172a" font-family="sans-serif">Normalize &amp; Validate</text>
+<path d="M 458 109 h 25" stroke="#0369a1" stroke-width="2"/>
+<rect x="484" y="72" rx="9" width="206" height="74" fill="#e0f2fe" stroke="#0369a1"/>
+<text x="587" y="115" text-anchor="middle" font-size="15" fill="#0f172a" font-family="sans-serif">Graph Reachability</text>
+<path d="M 690 109 h 25" stroke="#0369a1" stroke-width="2"/>
+<rect x="716" y="72" rx="9" width="206" height="74" fill="#e0f2fe" stroke="#0369a1"/>
+<text x="819" y="115" text-anchor="middle" font-size="15" fill="#0f172a" font-family="sans-serif">Advisory + Policy</text>
+<path d="M 922 109 h 25" stroke="#0369a1" stroke-width="2"/>
+<rect x="948" y="72" rx="9" width="206" height="74" fill="#e0f2fe" stroke="#0369a1"/>
+<text x="1051" y="115" text-anchor="middle" font-size="15" fill="#0f172a" font-family="sans-serif">Findings + Drift</text>
+</svg>

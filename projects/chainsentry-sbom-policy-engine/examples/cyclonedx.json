@@ -1,0 +1,113 @@
+{
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "bom-ref": "app",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "shopfront",
+      "purl": "pkg:pypi/shopfront@1.0.0",
+      "version": "1.0.0"
+    },
+    {
+      "bom-ref": "web",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "displaykit",
+      "purl": "pkg:pypi/displaykit@2.1.0",
+      "version": "2.1.0"
+    },
+    {
+      "bom-ref": "core",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "querybolt",
+      "purl": "pkg:pypi/querybolt@1.4.2",
+      "version": "1.4.2"
+    },
+    {
+      "bom-ref": "crypto",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "cipherleaf",
+      "purl": "pkg:pypi/cipherleaf@0.8.1",
+      "version": "0.8.1"
+    },
+    {
+      "bom-ref": "log",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-only"
+          }
+        }
+      ],
+      "name": "tracelog",
+      "purl": "pkg:pypi/tracelog@3.0.0",
+      "version": "3.0.0"
+    },
+    {
+      "bom-ref": "unused",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "ghostcache",
+      "purl": "pkg:pypi/ghostcache@0.1.0",
+      "version": "0.1.0"
+    }
+  ],
+  "dependencies": [
+    {
+      "dependsOn": [
+        "web",
+        "core"
+      ],
+      "ref": "app"
+    },
+    {
+      "dependsOn": [
+        "crypto",
+        "log"
+      ],
+      "ref": "web"
+    },
+    {
+      "dependsOn": [
+        "crypto"
+      ],
+      "ref": "core"
+    }
+  ],
+  "metadata": {
+    "component": {
+      "bom-ref": "app",
+      "name": "shopfront"
+    }
+  },
+  "specVersion": "1.5",
+  "version": 1
+}
