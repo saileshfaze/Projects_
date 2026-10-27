@@ -1,0 +1,23 @@
+name: VoltPilot checks
+on:
+  push:
+    paths:
+      - "projects/voltpilot-microgrid-dispatch/**"
+  pull_request:
+    paths:
+      - "projects/voltpilot-microgrid-dispatch/**"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/voltpilot-microgrid-dispatch
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -e '.[dev]'
+      - run: python -m compileall -q src
+      - run: pytest -q
+      - run: ruff check src tests --select F --output-format concise

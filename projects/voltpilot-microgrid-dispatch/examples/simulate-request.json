@@ -1,0 +1,12 @@
+{
+  "strategy": "self_consumption",
+  "step_minutes": 15,
+  "battery": {"capacity_kwh": 10, "initial_soc_kwh": 5, "min_soc_kwh": 1, "max_soc_kwh": 10},
+  "site": {"grid_import_limit_kw": 10, "grid_export_limit_kw": 5},
+  "intervals": [
+    {"timestamp":"2026-06-01T12:00:00+00:00","load_kw":5,"pv_kw":9,"import_eur_per_kwh":0.2,"export_eur_per_kwh":0.08,"carbon_kg_per_kwh":0.25,"grid_available":true},
+    {"timestamp":"2026-06-01T12:15:00+00:00","load_kw":6,"pv_kw":8,"import_eur_per_kwh":0.2,"export_eur_per_kwh":0.08,"carbon_kg_per_kwh":0.25,"grid_available":true},
+    {"timestamp":"2026-06-01T12:30:00+00:00","load_kw":7,"pv_kw":1,"import_eur_per_kwh":0.3,"export_eur_per_kwh":0.08,"carbon_kg_per_kwh":0.3,"grid_available":true},
+    {"timestamp":"2026-06-01T12:45:00+00:00","load_kw":8,"pv_kw":0,"import_eur_per_kwh":0.3,"export_eur_per_kwh":0.08,"carbon_kg_per_kwh":0.3,"grid_available":false}
+  ]
+}

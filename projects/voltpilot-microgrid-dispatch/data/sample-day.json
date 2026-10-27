@@ -1,0 +1,866 @@
+[
+  {
+    "timestamp": "2026-06-01T00:00:00+00:00",
+    "load_kw": 5.2028,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1104,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2315,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T00:15:00+00:00",
+    "load_kw": 4.8956,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.113,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2239,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T00:30:00+00:00",
+    "load_kw": 5.2526,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1169,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2292,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T00:45:00+00:00",
+    "load_kw": 5.2952,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1022,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2254,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T01:00:00+00:00",
+    "load_kw": 5.5484,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1085,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2304,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T01:15:00+00:00",
+    "load_kw": 5.3973,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1013,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2163,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T01:30:00+00:00",
+    "load_kw": 5.6722,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1192,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.235,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T01:45:00+00:00",
+    "load_kw": 4.734,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1052,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2239,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T02:00:00+00:00",
+    "load_kw": 5.1532,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1213,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2276,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T02:15:00+00:00",
+    "load_kw": 5.1587,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1163,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2191,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T02:30:00+00:00",
+    "load_kw": 6.0455,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1126,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2225,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T02:45:00+00:00",
+    "load_kw": 6.6272,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1175,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.225,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T03:00:00+00:00",
+    "load_kw": 7.5241,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1028,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2205,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T03:15:00+00:00",
+    "load_kw": 7.4648,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1105,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2106,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T03:30:00+00:00",
+    "load_kw": 7.4729,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.0965,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2276,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T03:45:00+00:00",
+    "load_kw": 7.8034,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1137,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2218,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T04:00:00+00:00",
+    "load_kw": 8.2637,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1216,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2257,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T04:15:00+00:00",
+    "load_kw": 8.8073,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1229,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2347,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T04:30:00+00:00",
+    "load_kw": 9.1399,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1151,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2177,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T04:45:00+00:00",
+    "load_kw": 9.2608,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1094,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2321,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T05:00:00+00:00",
+    "load_kw": 9.166,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1031,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2108,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T05:15:00+00:00",
+    "load_kw": 9.9241,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1087,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2231,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T05:30:00+00:00",
+    "load_kw": 10.6435,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1028,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2221,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T05:45:00+00:00",
+    "load_kw": 10.8305,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.1192,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2239,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T06:00:00+00:00",
+    "load_kw": 11.0499,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.2245,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2329,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T06:15:00+00:00",
+    "load_kw": 11.0226,
+    "pv_kw": 0.7047,
+    "import_eur_per_kwh": 0.2386,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2229,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T06:30:00+00:00",
+    "load_kw": 11.3658,
+    "pv_kw": 1.5361,
+    "import_eur_per_kwh": 0.244,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2311,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T06:45:00+00:00",
+    "load_kw": 10.3219,
+    "pv_kw": 2.3102,
+    "import_eur_per_kwh": 0.223,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2225,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T07:00:00+00:00",
+    "load_kw": 10.9265,
+    "pv_kw": 2.7877,
+    "import_eur_per_kwh": 0.2273,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2212,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T07:15:00+00:00",
+    "load_kw": 9.8637,
+    "pv_kw": 3.3877,
+    "import_eur_per_kwh": 0.2324,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2333,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T07:30:00+00:00",
+    "load_kw": 10.4042,
+    "pv_kw": 4.1072,
+    "import_eur_per_kwh": 0.2224,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2255,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T07:45:00+00:00",
+    "load_kw": 10.1627,
+    "pv_kw": 5.5751,
+    "import_eur_per_kwh": 0.2351,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2259,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T08:00:00+00:00",
+    "load_kw": 8.9528,
+    "pv_kw": 5.4667,
+    "import_eur_per_kwh": 0.2325,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2292,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T08:15:00+00:00",
+    "load_kw": 8.5716,
+    "pv_kw": 7.3112,
+    "import_eur_per_kwh": 0.2366,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2134,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T08:30:00+00:00",
+    "load_kw": 8.0334,
+    "pv_kw": 6.772,
+    "import_eur_per_kwh": 0.2437,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2319,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T08:45:00+00:00",
+    "load_kw": 6.78,
+    "pv_kw": 7.8549,
+    "import_eur_per_kwh": 0.2351,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2334,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T09:00:00+00:00",
+    "load_kw": 6.9496,
+    "pv_kw": 8.9757,
+    "import_eur_per_kwh": 0.2242,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2203,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T09:15:00+00:00",
+    "load_kw": 6.2208,
+    "pv_kw": 9.5953,
+    "import_eur_per_kwh": 0.2209,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2104,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T09:30:00+00:00",
+    "load_kw": 6.3064,
+    "pv_kw": 8.566,
+    "import_eur_per_kwh": 0.2165,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2187,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T09:45:00+00:00",
+    "load_kw": 5.8406,
+    "pv_kw": 9.5532,
+    "import_eur_per_kwh": 0.2158,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2228,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T10:00:00+00:00",
+    "load_kw": 4.984,
+    "pv_kw": 9.888,
+    "import_eur_per_kwh": 0.2248,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.213,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T10:15:00+00:00",
+    "load_kw": 5.2788,
+    "pv_kw": 11.7998,
+    "import_eur_per_kwh": 0.2391,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2138,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T10:30:00+00:00",
+    "load_kw": 5.127,
+    "pv_kw": 11.0449,
+    "import_eur_per_kwh": 0.2251,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.225,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T10:45:00+00:00",
+    "load_kw": 4.7265,
+    "pv_kw": 11.7417,
+    "import_eur_per_kwh": 0.227,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2149,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T11:00:00+00:00",
+    "load_kw": 4.6998,
+    "pv_kw": 12.6344,
+    "import_eur_per_kwh": 0.2313,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.231,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T11:15:00+00:00",
+    "load_kw": 5.4802,
+    "pv_kw": 11.539,
+    "import_eur_per_kwh": 0.2207,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2278,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T11:30:00+00:00",
+    "load_kw": 4.7921,
+    "pv_kw": 12.847,
+    "import_eur_per_kwh": 0.2309,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2296,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T11:45:00+00:00",
+    "load_kw": 5.7022,
+    "pv_kw": 11.9216,
+    "import_eur_per_kwh": 0.2198,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2311,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T12:00:00+00:00",
+    "load_kw": 5.1179,
+    "pv_kw": 11.5919,
+    "import_eur_per_kwh": 0.2274,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.212,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T12:15:00+00:00",
+    "load_kw": 5.0285,
+    "pv_kw": 11.3294,
+    "import_eur_per_kwh": 0.2229,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2224,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T12:30:00+00:00",
+    "load_kw": 5.1073,
+    "pv_kw": 12.5762,
+    "import_eur_per_kwh": 0.229,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2181,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T12:45:00+00:00",
+    "load_kw": 4.7821,
+    "pv_kw": 11.6221,
+    "import_eur_per_kwh": 0.2389,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2299,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T13:00:00+00:00",
+    "load_kw": 5.5827,
+    "pv_kw": 12.3496,
+    "import_eur_per_kwh": 0.2219,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2338,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T13:15:00+00:00",
+    "load_kw": 5.3602,
+    "pv_kw": 12.2723,
+    "import_eur_per_kwh": 0.2272,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2296,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T13:30:00+00:00",
+    "load_kw": 5.3874,
+    "pv_kw": 11.8983,
+    "import_eur_per_kwh": 0.2438,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2188,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T13:45:00+00:00",
+    "load_kw": 5.2682,
+    "pv_kw": 9.8108,
+    "import_eur_per_kwh": 0.2322,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2235,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T14:00:00+00:00",
+    "load_kw": 5.4376,
+    "pv_kw": 9.3593,
+    "import_eur_per_kwh": 0.2317,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2242,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T14:15:00+00:00",
+    "load_kw": 4.9742,
+    "pv_kw": 9.2297,
+    "import_eur_per_kwh": 0.223,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2239,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T14:30:00+00:00",
+    "load_kw": 4.9401,
+    "pv_kw": 8.5556,
+    "import_eur_per_kwh": 0.2436,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2143,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T14:45:00+00:00",
+    "load_kw": 5.485,
+    "pv_kw": 9.3354,
+    "import_eur_per_kwh": 0.2367,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2146,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T15:00:00+00:00",
+    "load_kw": 5.2073,
+    "pv_kw": 8.6721,
+    "import_eur_per_kwh": 0.2233,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2309,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T15:15:00+00:00",
+    "load_kw": 5.3402,
+    "pv_kw": 7.4604,
+    "import_eur_per_kwh": 0.2228,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2116,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T15:30:00+00:00",
+    "load_kw": 6.3177,
+    "pv_kw": 7.0937,
+    "import_eur_per_kwh": 0.2383,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2204,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T15:45:00+00:00",
+    "load_kw": 5.7549,
+    "pv_kw": 5.8575,
+    "import_eur_per_kwh": 0.2157,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2131,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T16:00:00+00:00",
+    "load_kw": 6.5773,
+    "pv_kw": 6.2102,
+    "import_eur_per_kwh": 0.2431,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2188,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T16:15:00+00:00",
+    "load_kw": 7.3551,
+    "pv_kw": 5.6097,
+    "import_eur_per_kwh": 0.2346,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2254,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T16:30:00+00:00",
+    "load_kw": 7.7343,
+    "pv_kw": 5.0091,
+    "import_eur_per_kwh": 0.2215,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2216,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T16:45:00+00:00",
+    "load_kw": 8.9967,
+    "pv_kw": 4.2563,
+    "import_eur_per_kwh": 0.2356,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2315,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T17:00:00+00:00",
+    "load_kw": 9.6241,
+    "pv_kw": 3.2114,
+    "import_eur_per_kwh": 0.3567,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.3437,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T17:15:00+00:00",
+    "load_kw": 9.9196,
+    "pv_kw": 2.2431,
+    "import_eur_per_kwh": 0.3581,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.3206,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T17:30:00+00:00",
+    "load_kw": 9.8495,
+    "pv_kw": 1.6246,
+    "import_eur_per_kwh": 0.3737,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.34,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T17:45:00+00:00",
+    "load_kw": 10.7082,
+    "pv_kw": 0.7091,
+    "import_eur_per_kwh": 0.3546,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.3426,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T18:00:00+00:00",
+    "load_kw": 10.4809,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.3618,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.338,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T18:15:00+00:00",
+    "load_kw": 10.932,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.3485,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.3231,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T18:30:00+00:00",
+    "load_kw": 11.0167,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.3647,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.3207,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T18:45:00+00:00",
+    "load_kw": 10.6559,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.3565,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.326,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T19:00:00+00:00",
+    "load_kw": 10.3768,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.3488,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.3336,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T19:15:00+00:00",
+    "load_kw": 10.9499,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.3655,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.3299,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T19:30:00+00:00",
+    "load_kw": 9.7923,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.3457,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.3269,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T19:45:00+00:00",
+    "load_kw": 9.5573,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.3544,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.3436,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T20:00:00+00:00",
+    "load_kw": 9.7657,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.3616,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.3363,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T20:15:00+00:00",
+    "load_kw": 9.2741,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.353,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.3358,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T20:30:00+00:00",
+    "load_kw": 8.8734,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.3647,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.3203,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T20:45:00+00:00",
+    "load_kw": 8.8085,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.3741,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.337,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T21:00:00+00:00",
+    "load_kw": 9.0318,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.2422,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.22,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T21:15:00+00:00",
+    "load_kw": 8.7367,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.222,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2307,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T21:30:00+00:00",
+    "load_kw": 7.5521,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.2258,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2259,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T21:45:00+00:00",
+    "load_kw": 7.4592,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.2387,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2245,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T22:00:00+00:00",
+    "load_kw": 7.2065,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.2196,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2323,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T22:15:00+00:00",
+    "load_kw": 6.9653,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.2401,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2276,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T22:30:00+00:00",
+    "load_kw": 6.3099,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.2175,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2193,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T22:45:00+00:00",
+    "load_kw": 5.2832,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.2372,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.235,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T23:00:00+00:00",
+    "load_kw": 4.8888,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.2405,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2246,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T23:15:00+00:00",
+    "load_kw": 5.7011,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.2264,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2341,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T23:30:00+00:00",
+    "load_kw": 5.3585,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.2197,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2227,
+    "grid_available": true
+  },
+  {
+    "timestamp": "2026-06-01T23:45:00+00:00",
+    "load_kw": 5.4558,
+    "pv_kw": 0.0,
+    "import_eur_per_kwh": 0.225,
+    "export_eur_per_kwh": 0.075,
+    "carbon_kg_per_kwh": 0.2165,
+    "grid_available": true
+  }
+]

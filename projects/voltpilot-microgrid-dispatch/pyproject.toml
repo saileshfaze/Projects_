@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voltpilot-microgrid-dispatch"
+version = "0.1.0"
+description = "Offline microgrid dispatch simulation with audit-ready energy accounting"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Sailesh"}]
+maintainers = [{name = "Sailesh", email = "105965746+saileshfaze@users.noreply.github.com"}]
+dependencies = ["fastapi>=0.110,<1", "pydantic>=2,<3", "uvicorn>=0.29,<1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "httpx>=0.27,<1", "ruff>=0.6,<1"]
+
+[project.scripts]
+voltpilot = "voltpilot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
