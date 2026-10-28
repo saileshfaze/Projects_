@@ -1,0 +1,26 @@
+# TEMPLATE: workflows only execute when installed in repository-root .github/workflows/.
+name: MetriForge tests
+on:
+  push:
+    paths:
+      - "projects/metriforge-manufacturing-quality-lab/**"
+      - ".github/workflows/metriforge-ci.yml"
+  pull_request:
+    paths:
+      - "projects/metriforge-manufacturing-quality-lab/**"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/metriforge-manufacturing-quality-lab
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -e '.[dev]'
+      - run: python -m compileall -q src tests
+      - run: pytest -q
+      - run: ruff check src tests scripts
+      - run: python scripts/validate_assets.py

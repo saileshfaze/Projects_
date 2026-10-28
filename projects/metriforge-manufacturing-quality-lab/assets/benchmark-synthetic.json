@@ -1,0 +1,15 @@
+{
+  "first_alarm": {
+    "cusum": 41,
+    "ewma": 41,
+    "shewhart": 24
+  },
+  "note": "synthetic single scenario, not a validated sensitivity or specificity benchmark",
+  "seed": 2026,
+  "signal_counts": {
+    "cusum": 37,
+    "ewma": 79,
+    "shewhart": 280
+  },
+  "step_index": 40
+}

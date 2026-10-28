@@ -1,0 +1,11 @@
+{
+  "audit_valid": true,
+  "events": 200,
+  "lot_tiers": {
+    "lot-01": "monitor",
+    "lot-02": "hold",
+    "lot-03": "hold"
+  },
+  "readings": 120,
+  "signals": 396
+}
