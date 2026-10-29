@@ -1,0 +1,19 @@
+{
+  "audit_events": 14,
+  "audit_valid": true,
+  "leader_available_fraction": 0.78,
+  "leader_tick_counts": {
+    "n2": 65,
+    "n4": 52
+  },
+  "leadership_transitions": 2,
+  "max_committed_index": 3,
+  "network": {
+    "blocked_links": 0,
+    "delivered": 570,
+    "dropped": 75,
+    "in_flight": 7,
+    "sent": 652
+  },
+  "ticks": 150
+}

@@ -1,0 +1,23 @@
+### Health
+GET http://127.0.0.1:8080/health
+
+### Elect leader
+POST http://127.0.0.1:8080/tick
+Content-Type: application/json
+
+{"steps":35}
+
+### Submit write
+POST http://127.0.0.1:8080/commands
+Content-Type: application/json
+
+{"request_id":"sample-1","op":"put","key":"stock","value":15}
+
+### Advance and inspect
+POST http://127.0.0.1:8080/tick
+Content-Type: application/json
+
+{"steps":20}
+
+### Cluster status
+GET http://127.0.0.1:8080/cluster

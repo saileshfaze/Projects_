@@ -1,0 +1,27 @@
+# Template only: nested workflow files do not execute on GitHub Actions.
+# To activate, copy to the repository root .github/workflows/ with a unique name.
+name: QuorumCraft CI template
+on:
+  push:
+    paths:
+      - 'projects/quorumcraft-raft-fault-lab/**'
+  pull_request:
+    paths:
+      - 'projects/quorumcraft-raft-fault-lab/**'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/quorumcraft-raft-fault-lab
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e '.[dev]'
+      - run: python -m compileall -q src
+      - run: python -m pytest -q
+      - run: ruff check src tests scripts
+      - run: python scripts/generate_assets.py --output out
+      - run: python scripts/stress_matrix.py --seeds 20

@@ -1,0 +1,65 @@
+{
+  "actions": [
+    {
+      "kind": "submit",
+      "payload": {
+        "command": {
+          "key": "orders",
+          "op": "put",
+          "value": 10
+        },
+        "request_id": "order-001"
+      },
+      "tick": 35
+    },
+    {
+      "kind": "submit",
+      "payload": {
+        "command": {
+          "key": "orders",
+          "op": "increment",
+          "value": 3
+        },
+        "request_id": "order-002"
+      },
+      "tick": 48
+    },
+    {
+      "kind": "partition",
+      "payload": {
+        "a": [
+          "n1",
+          "n2"
+        ],
+        "b": [
+          "n3",
+          "n4",
+          "n5"
+        ]
+      },
+      "tick": 65
+    },
+    {
+      "kind": "heal",
+      "payload": {},
+      "tick": 96
+    },
+    {
+      "kind": "submit",
+      "payload": {
+        "command": {
+          "key": "orders",
+          "op": "increment",
+          "value": 2
+        },
+        "request_id": "order-003"
+      },
+      "tick": 116
+    }
+  ],
+  "name": "partition-and-heal",
+  "nodes": 5,
+  "schema_version": 1,
+  "seed": 42,
+  "until": 150
+}
