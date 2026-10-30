@@ -1,0 +1,29 @@
+# Nested project template: GitHub Actions only auto-discovers workflows at repository root.
+name: SkyWeave project CI
+on:
+  push:
+    paths:
+      - 'projects/skyweave-airspace-conflict-lab/**'
+  pull_request:
+    paths:
+      - 'projects/skyweave-airspace-conflict-lab/**'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        working-directory: projects/skyweave-airspace-conflict-lab
+        run: python -m pip install -e '.[dev]'
+      - name: Test
+        working-directory: projects/skyweave-airspace-conflict-lab
+        run: python -m pytest -q
+      - name: Lint
+        working-directory: projects/skyweave-airspace-conflict-lab
+        run: ruff check src tests scripts

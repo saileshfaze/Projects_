@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skyweave-airspace-conflict-lab"
+version = "0.1.0"
+description = "Deterministic synthetic airspace conflict detection and sensitivity analysis"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "Sailesh"}]
+maintainers = [{name = "Sailesh", email = "105965746+saileshfaze@users.noreply.github.com"}]
+dependencies = ["fastapi>=0.110,<1", "pydantic>=2,<3", "uvicorn>=0.25,<1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "httpx>=0.27,<1", "ruff>=0.7,<1"]
+
+[project.scripts]
+skyweave = "skyweave.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 120
