@@ -1,0 +1,5 @@
+id,name,tax_rate
+1,north,0.19
+2,south,0.18
+3,east,0.21
+4,west,0.2

@@ -1,0 +1,29 @@
+# Nested template: copy to repository-root .github/workflows/ to activate.
+name: QueryWeaver checks
+on:
+  push:
+    paths:
+      - 'projects/queryweaver-cost-based-planner/**'
+  pull_request:
+    paths:
+      - 'projects/queryweaver-cost-based-planner/**'
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install
+        working-directory: projects/queryweaver-cost-based-planner
+        run: python -m pip install -e '.[api,dev]'
+      - name: Compile and test
+        working-directory: projects/queryweaver-cost-based-planner
+        run: |
+          python -m compileall -q src
+          python -m pytest -q
+          python scripts/check_invariants.py --seeds 30
+      - name: Ruff lint
+        working-directory: projects/queryweaver-cost-based-planner
+        run: ruff check src tests scripts

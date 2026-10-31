@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "queryweaver-planner-lab"
+version = "1.0.0"
+description = "Deterministic SQL parser, Selinger-style cost-based join planner and reference executor"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Sailesh", email = "105965746+saileshfaze@users.noreply.github.com"}]
+dependencies = []
+
+[project.optional-dependencies]
+api = ["fastapi>=0.100,<1", "uvicorn>=0.20,<1", "pydantic>=2,<3"]
+dev = ["pytest>=8,<10", "httpx>=0.25,<1", "ruff>=0.6,<1"]
+
+[project.scripts]
+queryweaver = "queryweaver.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "B"]

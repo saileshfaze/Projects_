@@ -1,0 +1,8 @@
+{
+  "tables": {
+    "customers": 24,
+    "orders": 160,
+    "products": 12,
+    "regions": 4
+  }
+}

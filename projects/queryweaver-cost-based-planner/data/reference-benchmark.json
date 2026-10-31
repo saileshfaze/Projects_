@@ -1,0 +1,32 @@
+[
+  {
+    "name": "two_way",
+    "seed": 2026,
+    "rows": 699,
+    "optimized_estimated_cost": 1456.131,
+    "baseline_estimated_cost": 70166.852,
+    "optimized_median_ms": 113.223,
+    "baseline_median_ms": 112.14,
+    "equivalent": true
+  },
+  {
+    "name": "three_way",
+    "seed": 2026,
+    "rows": 675,
+    "optimized_estimated_cost": 1676.697,
+    "baseline_estimated_cost": 111526.267,
+    "optimized_median_ms": 119.855,
+    "baseline_median_ms": 142.09,
+    "equivalent": true
+  },
+  {
+    "name": "four_way",
+    "seed": 2026,
+    "rows": 779,
+    "optimized_estimated_cost": 3472.525,
+    "baseline_estimated_cost": 143926.225,
+    "optimized_median_ms": 45.484,
+    "baseline_median_ms": 200.214,
+    "equivalent": true
+  }
+]

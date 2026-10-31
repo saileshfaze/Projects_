@@ -1,0 +1,17 @@
+digraph query_plan {
+  rankdir=BT;
+  node [shape=box,style="rounded,filled",fillcolor="#e8f0fe",fontname="Helvetica"];
+  scan_orders [label="table_scan: orders"];
+  scan_customers [label="table_scan: customers"];
+  scan_products [label="table_scan: products"];
+  join_1 [label="index_nested_loop_join"];
+  join_2 [label="hash_join"];
+  project [label="project"];
+  limit [label="limit"];
+  scan_customers -> join_1;
+  scan_orders -> join_1;
+  join_1 -> join_2;
+  scan_products -> join_2;
+  join_2 -> project;
+  project -> limit;
+}
