@@ -21,8 +21,7 @@ def main():
     out = Path("assets")
     out.mkdir(exist_ok=True)
     (out / "architecture.svg").write_text(ARCH, encoding="utf-8")
-    (out / "example-plan.dot").write_text(analyze(DEFAULT_SQL)["dot"] + "
-", encoding="utf-8")
+    (out / "example-plan.dot").write_text(analyze(DEFAULT_SQL)["dot"] + "\n", encoding="utf-8")
     print("Generated assets/architecture.svg and assets/example-plan.dot")
 
 
