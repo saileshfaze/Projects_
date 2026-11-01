@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resonance-audio-fingerprint-lab"
+version = "0.1.0"
+description = "Offline acoustic landmark fingerprinting, search and signal diagnostics"
+authors = [{name = "Sailesh"}]
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = ["numpy>=1.24,<3", "fastapi>=0.100,<1", "pydantic>=2,<3", "uvicorn>=0.23,<1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "httpx>=0.24", "ruff>=0.6"]
+
+[project.scripts]
+resonance = "resonance.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "B"]

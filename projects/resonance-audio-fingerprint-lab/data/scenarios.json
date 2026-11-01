@@ -1,0 +1,11 @@
+{
+  "description": "Entirely synthetic audio; no recordings or copyrighted samples",
+  "sample_rate": 16000,
+  "scenarios": [
+    {"name": "melody_a.wav", "seed": 7, "seconds": 3, "variant": "melody"},
+    {"name": "melody_b.wav", "seed": 11, "seconds": 3, "variant": "melody"},
+    {"name": "chirp.wav", "seed": 7, "seconds": 3, "variant": "chirp"},
+    {"name": "noise.wav", "seed": 7, "seconds": 3, "variant": "noise"},
+    {"name": "silence.wav", "seed": 7, "seconds": 1, "variant": "silence"}
+  ]
+}

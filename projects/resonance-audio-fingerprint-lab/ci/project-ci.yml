@@ -1,0 +1,29 @@
+# TEMPLATE ONLY: nested workflow files do not execute automatically.
+# Copy this file to the repository root .github/workflows/ to enable.
+name: Resonance project CI
+on:
+  push:
+    paths:
+      - 'projects/resonance-audio-fingerprint-lab/**'
+  pull_request:
+    paths:
+      - 'projects/resonance-audio-fingerprint-lab/**'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/resonance-audio-fingerprint-lab
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -e '.[dev]'
+      - run: python -m pytest
+      - run: python -m ruff check src tests scripts
+      - run: python scripts/generate_fixtures.py
+      - run: python scripts/generate_fixtures.py --check

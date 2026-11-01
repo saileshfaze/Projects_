@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="230" viewBox="0 0 880 230">
+  <rect width="880" height="230" rx="16" fill="#101827"/>
+  <g font-family="sans-serif" font-size="16" fill="#e5e7eb" text-anchor="middle">
+    <rect x="25" y="75" width="140" height="72" rx="10" fill="#245b73"/><text x="95" y="104">PCM WAV</text><text x="95" y="126">decoder</text>
+    <rect x="205" y="75" width="145" height="72" rx="10" fill="#245b73"/><text x="277" y="104">STFT + peaks</text><text x="277" y="126">16 kHz</text>
+    <rect x="390" y="75" width="145" height="72" rx="10" fill="#245b73"/><text x="462" y="104">Landmark</text><text x="462" y="126">hash pairs</text>
+    <rect x="575" y="75" width="125" height="72" rx="10" fill="#245b73"/><text x="637" y="104">SQLite</text><text x="637" y="126">index</text>
+    <rect x="740" y="75" width="115" height="72" rx="10" fill="#245b73"/><text x="797" y="104">Ranked</text><text x="797" y="126">matches</text>
+  </g>
+  <g stroke="#79c3d9" stroke-width="3" fill="none"><path d="M165 111 H205 M350 111 H390 M535 111 H575 M700 111 H740"/></g>
+  <text x="30" y="38" fill="#f8fafc" font-family="sans-serif" font-size="23">Resonance · Offline audio fingerprint pipeline</text>
+  <text x="30" y="198" fill="#94a3b8" font-family="sans-serif" font-size="14">Synthetic fixtures · Deterministic feature extraction · No third-party API</text>
+</svg>

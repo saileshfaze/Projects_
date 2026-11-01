@@ -1,0 +1,14 @@
+[analysis]
+canonical_sample_rate = 16000
+fft_size = 1024
+hop_size = 256
+mel_bands = 32
+
+[limits]
+max_wav_bytes = 25165824
+max_duration_seconds = 120
+max_search_results = 50
+
+[storage]
+backend = "sqlite"
+raw_audio_persisted = false

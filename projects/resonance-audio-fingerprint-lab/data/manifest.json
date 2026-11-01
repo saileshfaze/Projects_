@@ -1,0 +1,27 @@
+{
+  "chirp.wav": {
+    "duration_s": 3.0,
+    "sample_rate": 16000,
+    "sha256": "c523e623a2d2d27a8660478a05bb8d6d570cbb907be7ec2c1bc3f273e15420bc"
+  },
+  "melody_a.wav": {
+    "duration_s": 3.0,
+    "sample_rate": 16000,
+    "sha256": "4347ef42b9df4bba98c8be0903dd05077c5dff3f8216b5a74980d8371e973980"
+  },
+  "melody_b.wav": {
+    "duration_s": 3.0,
+    "sample_rate": 16000,
+    "sha256": "7c6f8488b7f6923883469828592793a77d7bf7e9c184a9d5b82c07938123eb6e"
+  },
+  "noise.wav": {
+    "duration_s": 3.0,
+    "sample_rate": 16000,
+    "sha256": "a4ab2f56f78b087079abd04b3824e5156e0a34cbee2f0d234e4d4fe688dc290b"
+  },
+  "silence.wav": {
+    "duration_s": 1.0,
+    "sample_rate": 16000,
+    "sha256": "643f8a8dc8bd9c19225afffad2becfec5426180b3749cb208abdf1a6c8354efc"
+  }
+}
