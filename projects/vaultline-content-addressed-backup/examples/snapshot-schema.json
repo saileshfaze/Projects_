@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Vaultline Snapshot Manifest",
+  "type": "object",
+  "required": ["version", "created", "label", "files", "chunking", "digest"],
+  "properties": {
+    "version": {"const": 1},
+    "created": {"type": "string"},
+    "label": {"type": "string"},
+    "chunking": {"type": "array", "minItems": 3, "maxItems": 3},
+    "digest": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "files": {"type": "array", "items": {"type": "object", "required": ["path", "size", "digest", "chunks"]}}
+  }
+}

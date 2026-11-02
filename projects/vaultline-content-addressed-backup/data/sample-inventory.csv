@@ -1,0 +1,5 @@
+asset_id,region,category,quantity
+DEMO-001,west,synthetic,12
+DEMO-002,north,synthetic,24
+DEMO-003,south,synthetic,18
+DEMO-004,east,synthetic,7

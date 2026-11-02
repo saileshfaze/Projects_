@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vaultline-backup-lab"
+version = "0.1.0"
+description = "Content-addressed, deduplicated snapshot and integrity lab"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "Sailesh"}]
+dependencies = []
+
+[project.optional-dependencies]
+api = ["fastapi>=0.110,<1", "uvicorn>=0.29,<1", "pydantic>=2,<3"]
+dev = ["pytest>=8,<10", "ruff>=0.7,<1"]
+
+[project.scripts]
+vaultline = "vaultline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 120

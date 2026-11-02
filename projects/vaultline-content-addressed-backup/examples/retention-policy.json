@@ -1,0 +1,6 @@
+{
+  "name": "demo-keep-three",
+  "keep_latest": 3,
+  "dry_run_default": true,
+  "notes": "Illustrative policy; apply using vaultline prune --keep 3 --apply"
+}

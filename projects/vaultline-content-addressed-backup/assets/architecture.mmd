@@ -1,0 +1,8 @@
+flowchart LR
+  A[Source files] --> B[Gear chunker]
+  B --> C[SHA-256 object store]
+  B --> D[Canonical manifest]
+  C --> E[Verified restore]
+  D --> E
+  D --> F[Retention mark and sweep]
+  E --> G[SQLite audit chain]
