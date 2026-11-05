@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "privacylens-dp-lab"
+version = "0.1.0"
+description = "Synthetic differential privacy analytics laboratory"
+requires-python = ">=3.10"
+authors = [{name = "Sailesh"}]
+license = {text = "MIT"}
+[project.optional-dependencies]
+test = ["pytest>=7"]
+api = ["fastapi>=0.110", "uvicorn>=0.27"]
+[project.scripts]
+privacylens = "privacylens.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]

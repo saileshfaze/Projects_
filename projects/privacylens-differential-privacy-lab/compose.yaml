@@ -1,0 +1,4 @@
+services:
+  demo:
+    build: .
+    command: ["data/synthetic_users.csv", "--epsilon", "1", "--budget", "2"]
