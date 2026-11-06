@@ -1,0 +1,10 @@
+services:
+  ledgerloom:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      LEDGERLOOM_DB: /data/ledger.sqlite3
+    volumes:
+      - ledger-data:/data
+volumes:
+  ledger-data:
