@@ -1,0 +1,32 @@
+{
+  "STA_A": {
+    "code": "STA_A",
+    "x_km": -12,
+    "y_km": -12,
+    "sample_hz": 50.0
+  },
+  "STA_B": {
+    "code": "STA_B",
+    "x_km": 12,
+    "y_km": -12,
+    "sample_hz": 50.0
+  },
+  "STA_C": {
+    "code": "STA_C",
+    "x_km": 12,
+    "y_km": 12,
+    "sample_hz": 50.0
+  },
+  "STA_D": {
+    "code": "STA_D",
+    "x_km": -12,
+    "y_km": 12,
+    "sample_hz": 50.0
+  },
+  "STA_E": {
+    "code": "STA_E",
+    "x_km": 0,
+    "y_km": 18,
+    "sample_hz": 50.0
+  }
+}

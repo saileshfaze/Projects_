@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "seismoscope-event-lab"
+version = "0.1.0"
+description = "Deterministic synthetic seismic event detection and location lab"
+requires-python = ">=3.10"
+authors = [{name = "Sailesh"}]
+dependencies = []
+[project.optional-dependencies]
+api = ["fastapi>=0.100", "uvicorn>=0.23"]
+dev = ["pytest>=7", "ruff>=0.6"]
+[project.scripts]
+seismoscope = "seismoscope.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+[tool.ruff]
+line-length = 110

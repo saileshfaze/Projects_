@@ -1,0 +1,47 @@
+{
+  "seed": 42,
+  "stations": 5,
+  "samples_per_station": 1000,
+  "picks": [
+    {
+      "station": "STA_A",
+      "time_s": 8.06,
+      "score": 3.7019757439327075
+    },
+    {
+      "station": "STA_B",
+      "time_s": 7.38,
+      "score": 2.9177425995615143
+    },
+    {
+      "station": "STA_C",
+      "time_s": 8.6,
+      "score": 3.318267018654278
+    },
+    {
+      "station": "STA_D",
+      "time_s": 9.04,
+      "score": 2.9315990849802906
+    },
+    {
+      "station": "STA_E",
+      "time_s": 9.24,
+      "score": 2.868026923555617
+    }
+  ],
+  "events": [
+    {
+      "origin_s": 4.818010404183207,
+      "x_km": 2.0,
+      "y_km": -4.0,
+      "residual_s": 0.016012006648848623,
+      "stations": [
+        "STA_A",
+        "STA_B",
+        "STA_C",
+        "STA_D",
+        "STA_E"
+      ]
+    }
+  ]
+}
