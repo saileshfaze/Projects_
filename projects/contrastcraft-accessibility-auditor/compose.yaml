@@ -1,0 +1,6 @@
+services:
+  auditor:
+    build: .
+    command: ["audit", "data/issues.html"]
+    read_only: true
+    network_mode: none

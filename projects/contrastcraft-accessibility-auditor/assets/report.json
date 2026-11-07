@@ -1,0 +1,57 @@
+{
+  "count": 8,
+  "by_severity": {
+    "error": 8,
+    "warning": 0
+  },
+  "findings": [
+    {
+      "rule": "accessible-name",
+      "severity": "error",
+      "line": 1,
+      "message": "button has no accessible text"
+    },
+    {
+      "rule": "accessible-name",
+      "severity": "error",
+      "line": 1,
+      "message": "a has no accessible text"
+    },
+    {
+      "rule": "document-language",
+      "severity": "error",
+      "line": 1,
+      "message": "html element needs lang"
+    },
+    {
+      "rule": "document-title",
+      "severity": "error",
+      "line": 1,
+      "message": "Document needs a title"
+    },
+    {
+      "rule": "duplicate-id",
+      "severity": "error",
+      "line": 1,
+      "message": "Duplicate id: dup"
+    },
+    {
+      "rule": "image-alt",
+      "severity": "error",
+      "line": 1,
+      "message": "Image needs alt attribute"
+    },
+    {
+      "rule": "input-label",
+      "severity": "error",
+      "line": 1,
+      "message": "Form control needs associated label"
+    },
+    {
+      "rule": "zoom-disabled",
+      "severity": "error",
+      "line": 1,
+      "message": "Viewport disables zoom"
+    }
+  ]
+}

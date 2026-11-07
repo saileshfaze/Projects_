@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "contrastcraft-accessibility-auditor"
+version = "0.1.0"
+description = "Deterministic HTML accessibility rule checks and WCAG contrast calculator"
+requires-python = ">=3.10"
+[project.scripts]
+contrastcraft = "contrastcraft.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+[tool.ruff]
+line-length = 120
