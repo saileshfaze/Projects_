@@ -1,0 +1,36 @@
+{
+  "flags": [
+    {
+      "key": "new-checkout",
+      "variations": {
+        "control": false,
+        "treatment": true
+      },
+      "default": "control",
+      "enabled": true,
+      "salt": "2026-launch",
+      "rollout": {
+        "treatment": 2500
+      },
+      "rules": [
+        {
+          "attribute": "internal",
+          "operator": "eq",
+          "value": true,
+          "variation": "treatment"
+        }
+      ]
+    },
+    {
+      "key": "search-ranking",
+      "variations": {
+        "baseline": "bm25",
+        "candidate": "hybrid"
+      },
+      "default": "baseline",
+      "rollout": {
+        "candidate": 1000
+      }
+    }
+  ]
+}

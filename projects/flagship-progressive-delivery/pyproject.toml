@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "flagship-progressive-delivery"
+version = "0.1.0"
+description = "Deterministic feature flag and experiment rollout engineering lab"
+requires-python = ">=3.10"
+dependencies = []
+[project.optional-dependencies]
+api = ["fastapi>=0.110", "uvicorn>=0.27"]
+dev = ["pytest>=7", "ruff>=0.6"]
+[project.scripts]
+flagship = "flagship.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+[tool.ruff]
+line-length = 110
