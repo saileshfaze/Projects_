@@ -1,0 +1,8 @@
+services:
+  simulation:
+    build: .
+    volumes:
+      - ./artifacts:/app/artifacts
+    read_only: true
+    tmpfs:
+      - /tmp

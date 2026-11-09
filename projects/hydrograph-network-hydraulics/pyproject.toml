@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "hydrograph-network-hydraulics"
+version = "0.1.0"
+description = "Deterministic synthetic water distribution network solver"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Sailesh"}]
+dependencies = []
+[project.optional-dependencies]
+api = ["fastapi>=0.110", "uvicorn>=0.27"]
+dev = ["pytest>=8", "ruff>=0.6"]
+[project.scripts]
+hydrograph = "hydrograph.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

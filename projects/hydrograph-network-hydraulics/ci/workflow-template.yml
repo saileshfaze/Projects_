@@ -1,0 +1,13 @@
+# Copy to repository-root .github/workflows/ after reviewing to activate.
+name: HydroGraph checks
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e './projects/hydrograph-network-hydraulics[dev]'
+      - run: cd projects/hydrograph-network-hydraulics && python -m pytest -q

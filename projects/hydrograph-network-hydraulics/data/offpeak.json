@@ -1,0 +1,41 @@
+{
+  "reservoir": "R",
+  "reservoir_head": 70.0,
+  "demands": {
+    "A": 1.0,
+    "B": 0.8999999999999999,
+    "C": 0.4
+  },
+  "pipes": [
+    {
+      "name": "R-A",
+      "start": "R",
+      "end": "A",
+      "resistance": 0.3
+    },
+    {
+      "name": "A-B",
+      "start": "A",
+      "end": "B",
+      "resistance": 0.5
+    },
+    {
+      "name": "B-C",
+      "start": "B",
+      "end": "C",
+      "resistance": 0.7
+    },
+    {
+      "name": "R-C",
+      "start": "R",
+      "end": "C",
+      "resistance": 0.6
+    },
+    {
+      "name": "A-C",
+      "start": "A",
+      "end": "C",
+      "resistance": 1.2
+    }
+  ]
+}
