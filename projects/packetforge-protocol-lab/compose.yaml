@@ -1,0 +1,6 @@
+services:
+  lab:
+    build: .
+    command: ["campaign", "--seed", "2026", "--cases", "500"]
+    read_only: true
+    network_mode: none

@@ -1,0 +1,13 @@
+name: PacketForge CI template (copy to repository root .github/workflows to activate)
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ./projects/packetforge-protocol-lab pytest ruff
+      - run: python -m pytest projects/packetforge-protocol-lab/tests -q
+      - run: ruff check projects/packetforge-protocol-lab/src projects/packetforge-protocol-lab/tests

@@ -1,0 +1,14 @@
+{
+  "accepted": 9,
+  "by_operation": {
+    "duplicate": 55,
+    "flip": 58,
+    "insert": 45,
+    "truncate": 40,
+    "zero": 52
+  },
+  "cases": 250,
+  "rejected": 241,
+  "seed": 2026,
+  "unexpected": 0
+}
