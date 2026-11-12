@@ -1,0 +1,6 @@
+services:
+  schemaharbor:
+    build: .
+    command: ["diff", "data/orders-v1.json", "data/orders-v2.json"]
+    read_only: true
+    network_mode: "none"

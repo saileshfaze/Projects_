@@ -1,0 +1,20 @@
+{
+  "edges": [
+    [
+      "orders",
+      "billing"
+    ],
+    [
+      "orders",
+      "analytics"
+    ],
+    [
+      "billing",
+      "finance"
+    ],
+    [
+      "analytics",
+      "dashboard"
+    ]
+  ]
+}

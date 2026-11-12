@@ -1,0 +1,21 @@
+{
+  "name": "orders",
+  "version": "1.0.0",
+  "fields": [
+    {
+      "name": "order_id",
+      "kind": "integer",
+      "minimum": 1
+    },
+    {
+      "name": "amount",
+      "kind": "integer",
+      "minimum": 0
+    },
+    {
+      "name": "region",
+      "kind": "string",
+      "required": false
+    }
+  ]
+}

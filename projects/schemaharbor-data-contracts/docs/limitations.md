@@ -1,0 +1,3 @@
+# Security and correctness boundaries
+
+Only use trusted local contract and graph files; JSON file size is not capped. The tool does not connect to remote services, execute user-provided expressions, or store credentials. Numeric CSV conversion uses Python floats and is not appropriate for financial precision or extremely large integers. Optional fields with empty strings are treated as absent. Date validation uses ISO calendar dates. Unknown columns are rejected unless `--allow-unknown` is supplied. No streaming backpressure, distributed registry, compatibility modes or policy approvals are implemented. Production adoption requires threat modeling, richer type systems, input size limits, authentication and integration tests.
