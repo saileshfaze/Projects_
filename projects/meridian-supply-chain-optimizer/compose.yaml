@@ -1,0 +1,4 @@
+services:
+  optimizer:
+    build: .
+    command: ["data/example.json"]
