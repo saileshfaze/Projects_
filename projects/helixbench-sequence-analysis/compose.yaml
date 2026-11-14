@@ -1,0 +1,7 @@
+services:
+  helixbench:
+    build: .
+    command: ["analyze", "--sequence", "ATGAAATAG"]
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
