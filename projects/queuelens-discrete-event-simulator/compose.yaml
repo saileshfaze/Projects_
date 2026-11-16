@@ -1,0 +1,4 @@
+services:
+  simulation:
+    build: .
+    command: ["data/example.json"]
