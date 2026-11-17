@@ -1,0 +1,29 @@
+[
+  {
+    "action": "read",
+    "resource": "document:public",
+    "subject": {
+      "role": "viewer",
+      "clearance": 0
+    }
+  },
+  {
+    "action": "write",
+    "resource": "document:internal",
+    "subject": {
+      "role": "editor",
+      "clearance": 2
+    },
+    "environment": {
+      "mfa": true
+    }
+  },
+  {
+    "action": "read",
+    "resource": "document:restricted",
+    "subject": {
+      "role": "admin",
+      "clearance": 0
+    }
+  }
+]

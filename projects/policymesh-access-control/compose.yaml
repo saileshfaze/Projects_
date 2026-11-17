@@ -1,0 +1,4 @@
+services:
+  evaluator:
+    build: .
+    command: ["data/policy.json", "data/requests.json"]

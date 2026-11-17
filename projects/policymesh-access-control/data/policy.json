@@ -1,0 +1,74 @@
+{
+  "version": "2026.11-demo",
+  "rules": [
+    {
+      "id": "block-restricted-low-clearance",
+      "effect": "deny",
+      "actions": [
+        "*"
+      ],
+      "resources": [
+        "document:restricted"
+      ],
+      "when": [
+        {
+          "path": "subject.clearance",
+          "op": "lte",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "read-public",
+      "effect": "allow",
+      "actions": [
+        "read"
+      ],
+      "resources": [
+        "document:public"
+      ]
+    },
+    {
+      "id": "editor-write",
+      "effect": "allow",
+      "actions": [
+        "write"
+      ],
+      "resources": [
+        "document:*"
+      ],
+      "when": [
+        {
+          "path": "subject.role",
+          "op": "in",
+          "value": [
+            "editor",
+            "admin"
+          ]
+        },
+        {
+          "path": "environment.mfa",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "admin-read",
+      "effect": "allow",
+      "actions": [
+        "read"
+      ],
+      "resources": [
+        "document:*"
+      ],
+      "when": [
+        {
+          "path": "subject.role",
+          "op": "eq",
+          "value": "admin"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Limitations and security considerations
+
+This demonstration does not enforce authorization; it only calculates a decision. The caller must apply the result at the protected resource. No authentication, identity attestation, integrity checking, cryptographic audit log, rule signature verification, version pinning across services, or denial-of-service protections are provided. `fnmatchcase` uses glob matching, not hierarchical resource semantics. The evaluator validates the rule shape but does not restrict arbitrary dotted attribute paths to an allowlist. Numeric comparisons are simplified. Do not treat test results as a security certification.
