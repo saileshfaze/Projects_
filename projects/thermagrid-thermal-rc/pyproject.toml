@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "thermagrid-thermal-rc"
+version = "0.1.0"
+description = "Synthetic building thermal RC simulation and HVAC control comparison"
+requires-python = ">=3.10"
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+[project.scripts]
+thermagrid = "thermagrid.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
