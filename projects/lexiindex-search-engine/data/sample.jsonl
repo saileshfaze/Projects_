@@ -1,0 +1,3 @@
+{"id":"doc-001","title":"Indexing fundamentals","body":"An inverted index maps each search term to documents and term positions."}
+{"id":"doc-002","title":"Search ranking","body":"BM25 ranking combines term frequency, document length and inverse document frequency."}
+{"id":"doc-003","title":"Database transactions","body":"SQLite provides transactional updates and cascading posting deletion."}
