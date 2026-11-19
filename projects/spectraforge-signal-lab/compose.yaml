@@ -1,0 +1,4 @@
+services:
+  spectraforge:
+    build: .
+    command: ["--samples", "256", "--rate", "256", "--output", "/tmp/report.json"]

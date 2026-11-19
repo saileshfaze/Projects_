@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "spectraforge-signal-lab"
+version = "0.1.0"
+description = "Deterministic synthetic digital signal processing lab"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.6"]
+[project.scripts]
+spectraforge = "spectraforge.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+[tool.ruff]
+line-length = 120
